@@ -42,7 +42,7 @@ Once included, simply `@import` either the master SCSS file, or the individual f
 
 ```scss
 // Example: All of Dojo
-@import "dojo-css/scss/primer";
+@import "dojo-css/scss/dojo";
 
 // Example: Individual files
 @import "dojo-css/scss/variables";
