@@ -1,0 +1,196 @@
+.navbar {
+  background: $nav-primary-back;
+  color: $nav-primary-color;
+  padding: 0;
+  background-image: linear-gradient(to right, $nav-primary-back, darken($nav-primary-back, 5%));
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-align-items: stretch;
+       -ms-flex-align: stretch;
+          align-items: stretch;
+  a {
+    color: $nav-primary-color;
+    &:hover {
+      color: $nav-primary-color-hover;
+      text-decoration: none;
+    }
+  }
+  li.active {
+    a {
+      background-color: $nav-primary-active;
+      color: #fff;
+      background-image: radial-gradient( circle at 50% 50%, $nav-primary-active 60%, darken($nav-primary-active, 5%) 100%);
+    }
+  }
+  .iconic * {
+    fill: #fff;
+    stroke: #fff;
+  }
+  .iconic *.iconic-property-accent {
+      fill: #fff;
+      stroke: #fff;
+  }
+}
+.grid-frame.vertical .navbar {
+  background: $nav-primary-back;
+  background-image: linear-gradient($nav-primary-back, darken($nav-primary-back, 5%));
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: visible;
+}
+.ks-logo {
+  padding: 0;
+  a {
+    display: block;
+    height: 54px;
+    &:hover {
+      background-color: $nav-primary-active;
+    }
+  }
+}
+#ks-nav {
+  -webkit-order: 2;
+ -ms-flex-order: 2;
+          order: 2;
+}
+.grid-frame.vertical {
+  #ks-nav {
+    -webkit-order: 0;
+   -ms-flex-order: 0;
+            order: 0;
+  }
+}
+.ks-nav {
+  font-weight: 400;
+  // letter-spacing: 2px;
+  padding: 0;
+  // text-transform: uppercase;
+  .octicon {
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    width: 20px;
+  }
+  li {
+    a, .octicon {
+      line-height: 45px;
+    }
+  }
+}
+.grid-frame.vertical .ks-nav {
+  border-left: 1px solid $nav-primary-active;
+  .octicon {
+    display: inline;
+  }
+  li {
+    a, .octicon {
+      line-height: 54px;
+    }
+  }
+}
+.ks-subnav {
+  font-size: 13px;
+  font-weight: 400;
+  // letter-spacing: 1px;
+  padding: 7px 1rem;
+  // text-transform: uppercase;
+  li {
+    a {
+      line-height: 20px;
+    }
+  }
+}
+.ks-usernav {
+  border-bottom: 1px solid $nav-primary-active;
+  border-top: 1px solid $nav-primary-active;
+  padding: 0;
+  a {
+    display: block;
+    padding: .5rem 1rem;
+    &:hover {
+      background-color: $nav-primary-active;
+    }
+  }
+  .ks-usernav-name {
+    margin-left: 4px;
+  }
+}
+.grid-frame.vertical .ks-usernav {
+  padding: 0 1rem;
+  border: none;
+  .ks-usernav-name {
+    display: none;
+  }
+}
+@media screen and (max-width: $nav-break) {
+  .navbar .ks-nav .ks-nav-blocks {
+    li {
+      a {
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+  .navbar .ks-usernav .ks-nav-blocks {
+    li {
+      a {
+        padding: 0;
+      }
+    }
+  }
+  .ks-usernav .ks-usernav-name {
+    display: none;
+  }
+  .ks-nav {
+    .ks-nav-label {
+      display: none;
+    }
+  }
+}
+
+.subnav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: visible;
+  background: $nav-back;
+  color: $nav-color;
+  border-bottom: 1px solid $border;
+  padding: 0;
+  a {
+    color: $nav-color;
+    &:hover {
+      color: darken($nav-color, 15%);
+      text-decoration: none;
+    }
+  }
+  li.active {
+    a {
+      background-color: $nav-active;
+      color: darken($nav-color, 15%);
+    }
+  }
+}

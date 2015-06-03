@@ -1,13 +1,13 @@
 /*
- * Primer
- * http://primercss.io
+ * Dojo
+ * http://dojo.kickserv.com
  *
- * Released under MIT license. Copyright 2015 GitHub, Inc.
+ * Released under MIT license. Copyright 2015 Kickserv, Inc.
  */
 
-// Primer master file
+// Dojo master file
 //
-// Imports all Primer files in their intended order for easy mass-inclusion.
+// Imports all Dojo files in their intended order for easy mass-inclusion.
 // Should you need specific files, you can easily use separate `@import`s.
 
 // Global requirements
@@ -29,11 +29,13 @@
 @import "blankslate";
 @import "counter";
 @import "buttons";
+@import "navbar";
 @import "menu";
 @import "tabnav";
 @import "filter-list";
 @import "states";
 @import "tooltips";
+@import "panels";
 
 // Utilities
 @import "flex-table";

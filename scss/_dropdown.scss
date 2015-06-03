@@ -1,4 +1,4 @@
-.ks-dropdown {
+.dropdown {
   display: none;
   position: absolute;
   z-index: 9000;
@@ -8,9 +8,4 @@
   .octicon {
     color: $brand-gray-light;
   }
-}
-.ks-dropdown#usernav {
-  right: 1rem;
-  top: 45px;
-  width: 160px;
 }

@@ -1,29 +1,28 @@
 // Gloabls
-$ks-background-color: #EFF0F5;
-$ks-font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-$ks-border: #e7e7ea;
+$background-color: #EFF0F5;
+$border: #e7e7ea;
 
 // Navbar
-$ks-nav-back: #fff;
-$ks-nav-color: #a0a6b4;
-$ks-nav-active: #e7e7eA;
-$ks-nav-primary-back: #53607d;
-$ks-nav-primary-color: #dadce1;
-$ks-nav-primary-color-hover: #fff;
-$ks-nav-primary-active: #3c415f;
-$ks-nav-break: 600px; // below this viewport width, only nav icons are shown
+$nav-back: #fff;
+$nav-color: #a0a6b4;
+$nav-active: #e7e7eA;
+$nav-primary-back: #53607d;
+$nav-primary-color: #dadce1;
+$nav-primary-color-hover: #fff;
+$nav-primary-active: #3c415f;
+$nav-break: 600px; // below this viewport width, only nav icons are shown
 
 // Border Radius
-$ks-border-radius: 3px;
+$border-radius: 3px;
 
 // Panels
-$ks-panel-header-back: #f8f9fb;
+$panel-header-back: #f8f9fb;
 
 // Tables
-$ks-td-padding-top: 10px;
-$ks-td-padding-bottom: $ks-td-padding-top;
-$ks-td-padding-left: 10px;
-$ks-td-padding-right: $ks-td-padding-left;
+$td-padding-top: 10px;
+$td-padding-bottom: $td-padding-top;
+$td-padding-left: 10px;
+$td-padding-right: $td-padding-left;
 
 
 $container-width: 100% !default;
@@ -40,7 +39,7 @@ $brand-orange:     #f93    !default;
 $brand-purple:     #6e5494 !default;
 
 // Font stack
-$body-font: $ks-font-family;
+$body-font: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 // The base body size
 $body-font-size: 14px !default;
