@@ -10,6 +10,10 @@ Primer comes with several navigation components. Some were designed with singula
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
+## Navbar
+
+This will be the navbar section.
+
 ## Menu
 
 The menu is a vertical list of navigational links. **A menu's width and placement must be set by you.** If you like, just use our grid columns as a parent. Otherwise, apply a custom `width`.
