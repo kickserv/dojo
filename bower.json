@@ -11,7 +11,7 @@
     "Gruntfile.js"
   ],
   "main": [
-    "scss/primer.scss"
+    "scss/dojo.scss"
   ],
   "dependencies": {
     "octicons": "*",
