@@ -51,7 +51,7 @@ module.exports = function(grunt) {
           'TotalImportantKeywords',
           'TotalMediaQueries'
         ],
-        file: "css/.primer-stats.md",
+        file: "css/.dojo-stats.md",
         usePackage: true
       },
       src: [
