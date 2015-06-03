@@ -349,9 +349,27 @@ body {
   > .grid-block {
     background: #eaeaea;
     > .grid-block {
+      height: 70px;
+      position: relative;
+      &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        background: #dadada;
+      }
+    }
+    #tabs, #main {
       background: #dadada;
-      padding: 1rem;
+      height: auto;
       margin: 1rem;
+      padding: 1rem;
+      &:after {
+        display: none;
+      }
     }
   }
 }

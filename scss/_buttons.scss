@@ -216,6 +216,52 @@
   }
 }
 
+// Action button
+//
+// For when we need a linky-action that's a little heavier.
+.btn-action {
+  color: $brand-blue;
+  background-color: #fff; // Reset default gradient backgrounds and colors
+  background-image: none;
+  border: 2px solid lighten($brand-blue, 25%);
+
+  .counter {
+    background-color: #eee;
+  }
+
+  &:hover,
+  &:active,
+  &.selected,
+  &.zeroclipboard-is-hover,
+  &.zeroclipboard-is-active {
+    color: #fff;
+    background-color: $brand-blue;
+    background-image: none;
+    border-color: $brand-blue;
+
+    .counter {
+      color: $brand-blue;
+      background-color: #fff;
+    }
+  }
+
+  &.selected:hover {
+    background-color: darken($brand-blue, 5%);
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      color: #777;
+      background-color: #fff;
+      background-image: none;
+      border-color: #e5e5e5;
+    }
+  }
+}
+
+
 // Social button count
 .btn-with-count {
   float: left;
