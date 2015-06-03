@@ -55,6 +55,16 @@ Outline buttons downplay an action as they appear like boxy links. Just add `.bt
 <button class="btn btn-sm btn-outline" type="button">Outline button</button>
 {% endexample %}
 
+## Action
+
+Action buttons are a little fancier than Outline buttons. Just add `.btn-action`.
+
+{% example html %}
+<button class="btn btn-action" type="button">Action button</button>
+<button class="btn btn-sm btn-action" type="button">Action button</button>
+{% endexample %}
+
+
 ## Disabled state
 
 Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elements with the `.disabled` class.
@@ -64,7 +74,7 @@ Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elem
 <a class="btn disabled" href="#" role="button">Disabled button</a>
 {% endexample %}
 
-Similar styles are applied to primary, danger, and outline buttons:
+Similar styles are applied to primary, danger, outline and action buttons:
 
 {% example html %}
 <button class="btn btn-primary" type="button" disabled>Disabled button</button>
@@ -79,6 +89,11 @@ Similar styles are applied to primary, danger, and outline buttons:
 {% example html %}
 <button class="btn btn-outline" type="button" disabled>Disabled button</button>
 <a class="btn btn-outline disabled" href="#" role="button">Disabled button</a>
+{% endexample %}
+
+{% example html %}
+<button class="btn btn-action" type="button" disabled>Disabled button</button>
+<a class="btn btn-action disabled" href="#" role="button">Disabled button</a>
 {% endexample %}
 
 ## Block buttons
@@ -168,7 +183,7 @@ Add `.button_to` to `<form>`s within `.btn-group`s for proper spacing and rounde
 </div>
 {% endexample %}
 
-## Hidden text button
+<!-- ## Hidden text button
 
 Use `.hidden-text-expander` to indicate and toggle hidden text.
 
@@ -178,4 +193,4 @@ Use `.hidden-text-expander` to indicate and toggle hidden text.
 </span>
 {% endexample %}
 
-You can also make the expander appear inline by adding `.inline`.
+You can also make the expander appear inline by adding `.inline`. -->

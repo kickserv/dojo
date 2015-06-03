@@ -13,12 +13,12 @@ Headings, paragraphs, blockquotes, lists, and more have some global resets. It's
 ## Headings
 
 {% example html %}
-<h1>h1. Primer heading</h1>
-<h2>h2. Primer heading</h2>
-<h3>h3. Primer heading</h3>
-<h4>h4. Primer heading</h4>
-<h5>h5. Primer heading</h5>
-<h6>h6. Primer heading</h6>
+<h1>h1. Dojo heading</h1>
+<h2>h2. Dojo heading</h2>
+<h3>h3. Dojo heading</h3>
+<h4>h4. Dojo heading</h4>
+<h5>h5. Dojo heading</h5>
+<h6>h6. Dojo heading</h6>
 {% endexample %}
 
 ## Body text
@@ -67,7 +67,7 @@ Wrap `<blockquote>` around any <abbr title="HyperText Markup Language">HTML</abb
 ## Lists
 
 <div class="flash">
-  <strong>Heads up!</strong> The broken display of lists is <strong>intentional</strong> as Primer globally resets these elements for the time being. This will eventually be undone in the next major version.
+  <strong>Heads up!</strong> The broken display of lists is <strong>intentional</strong> as Dojo globally resets these elements for the time being. This will eventually be undone in the next major version.
 </div>
 
 ### Unordered

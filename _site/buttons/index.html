@@ -108,11 +108,11 @@
   <li><a href="#primary">Primary</a></li>
   <li><a href="#danger">Danger</a></li>
   <li><a href="#outline">Outline</a></li>
+  <li><a href="#action">Action</a></li>
   <li><a href="#disabled-state">Disabled state</a></li>
   <li><a href="#block-buttons">Block buttons</a></li>
   <li><a href="#with-counts">With counts</a></li>
   <li><a href="#button-groups">Button groups</a></li>
-  <li><a href="#hidden-text-button">Hidden text button</a></li>
 </ul>
 
 <h2 id="default-buttons">Default buttons</h2>
@@ -160,6 +160,15 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Outline button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Outline button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
+<h2 id="action">Action</h2>
+
+<p>Action buttons are a little fancier than Outline buttons. Just add <code>.btn-action</code>.</p>
+
+<div class="docs-example clearfix"><button class="btn btn-action" type="button">Action button</button>
+<button class="btn btn-sm btn-action" type="button">Action button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Action button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-action"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Action button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+
 <h2 id="disabled-state">Disabled state</h2>
 
 <p>Disable <code>&lt;button&gt;</code> elements with the boolean <code>disabled</code> attribute and <code>&lt;a&gt;</code> elements with the <code>.disabled</code> class.</p>
@@ -169,7 +178,7 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
-<p>Similar styles are applied to primary, danger, and outline buttons:</p>
+<p>Similar styles are applied to primary, danger, outline and action buttons:</p>
 
 <div class="docs-example clearfix"><button class="btn btn-primary" type="button" disabled="">Disabled button</button>
 <a class="btn btn-primary disabled" href="#" role="button">Disabled button</a></div>
@@ -185,6 +194,11 @@
 <a class="btn btn-outline disabled" href="#" role="button">Disabled button</a></div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-outline disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<div class="docs-example clearfix"><button class="btn btn-action" type="button" disabled="">Disabled button</button>
+<a class="btn btn-action disabled" href="#" role="button">Disabled button</a></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-action"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-action disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
 <h2 id="block-buttons">Block buttons</h2>
 
@@ -315,18 +329,19 @@
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h2 id="hidden-text-button">Hidden text button</h2>
+<!-- ## Hidden text button
 
-<p>Use <code>.hidden-text-expander</code> to indicate and toggle hidden text.</p>
+Use `.hidden-text-expander` to indicate and toggle hidden text.
+
 
 <div class="docs-example clearfix"><span class="hidden-text-expander">
   <a href="#">&hellip;</a>
-</span></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-text-expander"</span><span class="nt">&gt;</span>
+</span></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-text-expander"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="ni">&amp;hellip;</span><span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/span&gt;</span></code></pre></div>
 
-<p>You can also make the expander appear inline by adding <code>.inline</code>.</p>
+
+You can also make the expander appear inline by adding `.inline`. -->
 
     </div>
   </div>

@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", $body-font;
+  font-family: $body-font;
   font-size: 1rem;
 }
 
@@ -45,6 +45,7 @@ body {
 
 .markdown-body {
   overflow: visible;
+  font-family: $body-font;
 }
 
 
@@ -297,8 +298,6 @@ body {
   // Override Markdown styles to restore values from `_type.scss`
   ul,
   ol {
-    padding: 0;
-    margin-top: 0;
     margin-bottom: 0;
   }
 
