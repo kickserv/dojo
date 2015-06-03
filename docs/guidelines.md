@@ -203,7 +203,7 @@ Use [Sprockets](https://github.com/sstephenson/sprockets) to **require** files. 
 .rule { ... }
 {% endhighlight %}
 
-This is also how Primer's styles are to be included, should you need them.
+This is also how Dojo's styles are to be included, should you need them.
 
 ## Pixels vs. ems
 

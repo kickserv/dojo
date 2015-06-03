@@ -20,13 +20,12 @@
 }
 
 .state-open,
-.state-proposed,
-.state-reopened {
+.state-inprogress {
   background-color: $status-open;
 }
 
-.state-merged { background-color: $status-merged; }
+.state-complete { background-color: $status-merged; }
 
-.state-closed { background-color: $status-closed; }
+.state-canceled { background-color: $status-closed; }
 
 .state-renamed { background-color: $status-renamed; }

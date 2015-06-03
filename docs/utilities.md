@@ -3,7 +3,7 @@ layout: page
 title: Utilities
 ---
 
-There are a handful of utilities in Primer for quick behaviors, floats, colors, alignment, and more.
+There are a handful of utilities in Dojo for quick behaviors, floats, colors, alignment, and more.
 
 ## Contents
 

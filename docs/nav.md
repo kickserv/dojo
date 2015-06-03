@@ -3,16 +3,12 @@ layout: page
 title: Navigation
 ---
 
-Primer comes with several navigation components. Some were designed with singular purposes, while others were design to be more flexible and appear quite frequently.
+Dojo comes with several navigation components. Some were designed with singular purposes, while others were design to be more flexible and appear quite frequently.
 
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-
-## Navbar
-
-This will be the navbar section.
 
 ## Menu
 
@@ -145,7 +141,3 @@ A vertical list of filters. Grey text on white background. Selecting a filter fr
   </li>
 </ul>
 {% endexample %}
-
-## Breadcrumb
-
-*Coming soon...*

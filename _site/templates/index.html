@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      Templates &middot; Dojo
+    </title>
+
+    <link rel="stylesheet" href="/docs.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+
+    <header class="masthead">
+      <div class="container">
+        <a href="/" class="masthead-logo">
+          <span class="dojo-logo"></span>
+          Dojo
+        </a>
+
+        <nav class="masthead-nav">
+          <a  href="/scaffolding">Docs</a>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <div class="container">
+      <div class="columns docs-layout">
+  <div class="one-fourth column">
+    
+      <nav class="menu docs-menu">
+  <a class="menu-item " href="/scaffolding/">
+    Scaffolding
+  </a>
+  <a class="menu-item " href="/layout/">
+    Layout
+  </a>
+  <a class="menu-item " href="/type/">
+    Type
+  </a>
+  <a class="menu-item " href="/buttons/">
+    Buttons
+  </a>
+  <a class="menu-item " href="/forms/">
+    Forms
+  </a>
+  <a class="menu-item " href="/nav/">
+    Navigation
+  </a>
+  <a class="menu-item " href="/alerts/">
+    Alerts
+  </a>
+  <a class="menu-item " href="/blankslate/">
+    Blankslate
+  </a>
+  <a class="menu-item " href="/avatars/">
+    Avatars
+  </a>
+  <a class="menu-item " href="/states/">
+    States
+  </a>
+  <a class="menu-item " href="/tooltips/">
+    Tooltips
+  </a>
+  <a class="menu-item " href="/utilities/">
+    Utilities
+  </a>
+</nav>
+
+<nav class="menu docs-menu">
+  <a class="menu-item " href="/guidelines/">
+    Code guidelines
+  </a>
+  <a class="menu-item " href="/colors/">
+    Colors
+  </a>
+  <a class="menu-item selected" href="/templates/">
+    Templates
+  </a>
+</nav>
+
+    
+  </div>
+  <div class="three-fourths column markdown-body">
+    <h1 class="page-title">
+      Templates
+    </h1>
+    <div class="markdown-body">
+      <p>Best practices and guidelines for writing HTML and CSS with approachable formatting, syntax, and more.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents">Contents</a></li>
+  <li><a href="#rails-layout">Rails Layout</a></li>
+</ul>
+
+<h2 id="rails-layout">Rails Layout</h2>
+
+<p>This is a master layout for use in Kickserv. The navbar can be easily switched from horizontal to vertical by adding and removing <code>.vertical</code> from the <code>.grid-frame</code>.</p>
+
+<p><strong>Note:</strong> Adding <code>.vertical</code> makes the navbar <em>horizontal</em>, since the <code>.vertical</code> class tells the contained <code>.grid-block</code> divs to be stacked <em>vertically</em>. Confusing, I know.</p>
+
+<div class="highlight"><pre><code class="language-erb" data-lang="erb"><span class="cp">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</span>
+<span class="c">&lt;!--[if lt IE 7 ] &lt;html lang="#{current_account.locale}" class="no-js ie6"&gt;--&gt;</span>
+<span class="c">&lt;!--[if IE 7 ] &lt;html lang="#{current_account.locale}" class="no-js ie7"&gt;--&gt;</span>
+<span class="c">&lt;!--[if IE 8 ] &lt;html lang="#{current_account.locale}" class="no-js ie8"&gt;--&gt;</span>
+<span class="c">&lt;!--[if IE 9 ] &lt;html lang="#{current_account.locale}" class="no-js ie9"&gt;--&gt;</span>
+<span class="c">&lt;!-- [if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">class=</span><span class="s">"no-js"</span> <span class="na">lang=</span><span class="s">"</span><span class="cp">&lt;%=</span> <span class="n">current_account</span><span class="p">.</span><span class="nf">locale</span> <span class="cp">%&gt;</span><span class="s">"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- &lt;![endif]--&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">"IE=edge,chrome=1"</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>
+      <span class="cp">&lt;%=</span> <span class="n">page_title</span> <span class="cp">%&gt;</span>
+      <span class="cp">&lt;%=</span> <span class="s2">"(</span><span class="si">#{</span><span class="no">Rails</span><span class="p">.</span><span class="nf">env</span><span class="si">}</span><span class="s2">:</span><span class="si">#{</span><span class="n">commit_sha</span><span class="si">}</span><span class="s2">)"</span> <span class="k">unless</span> <span class="no">Rails</span><span class="p">.</span><span class="nf">env</span><span class="p">.</span><span class="nf">production?</span> <span class="o">||</span> <span class="no">Rails</span><span class="p">.</span><span class="nf">env</span><span class="p">.</span><span class="nf">beta?</span> <span class="cp">%&gt;</span>
+    <span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="na">name=</span><span class="s">"viewport"</span><span class="nt">/&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">favicon_link_tag</span> <span class="s1">'/favicon.ico'</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">csrf_meta_tag</span> <span class="cp">%&gt;</span>
+    <span class="c">&lt;!-- Le HTML5 shim, for IE6-8 support of HTML5 elements--&gt;</span>
+    <span class="c">&lt;!--[if lt IE 9]--&gt;</span><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"//html5shim.googlecode.com/svn/trunk/html5.js"</span><span class="nt">&gt;&lt;/script&gt;</span><span class="c">&lt;!-- &lt;![endif]--&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="k">yield</span> <span class="ss">:before_app_style</span> <span class="cp">%&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">stylesheet_link_tag</span> <span class="s2">"ks-app"</span><span class="p">,</span> <span class="ss">:media</span> <span class="o">=&gt;</span> <span class="s2">"screen, print"</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="k">yield</span><span class="p">(</span><span class="ss">:head</span><span class="p">)</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"ks-app </span><span class="cp">&lt;%=</span> <span class="vi">@body_class</span> <span class="cp">%&gt;</span><span class="s">"</span> <span class="na">data-class_group=</span><span class="s">"Application"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">partial: </span><span class="s2">"shared/gtm"</span> <span class="cp">%&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-frame"</span><span class="nt">&gt;</span>
+      <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="s1">'layouts/masquerading'</span> <span class="k">if</span> <span class="n">masquerading?</span> <span class="cp">%&gt;</span>
+      <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">partial: </span><span class="s2">"layouts/nav_ks_app"</span> <span class="cp">%&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block vertical"</span><span class="nt">&gt;</span>
+        <span class="cp">&lt;%=</span> <span class="k">yield</span><span class="p">(</span><span class="ss">:subnav</span><span class="p">)</span> <span class="cp">%&gt;</span>
+        <span class="cp">&lt;%=</span> <span class="n">ks_flash_div</span> <span class="o">*</span><span class="p">(</span><span class="n">flash</span><span class="p">.</span><span class="nf">keys</span> <span class="o">-</span> <span class="p">[</span> <span class="ss">:logged_in</span> <span class="p">])</span> <span class="cp">%&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block ks-content-block"</span><span class="nt">&gt;</span>
+          <span class="cp">&lt;%=</span> <span class="k">yield</span> <span class="cp">%&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s2">"layouts/js_ssk_preferences"</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="k">yield</span> <span class="ss">:modal</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s1">'layouts/delete_confirmation'</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s1">'layouts/generic_lightbox'</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s1">'layouts/signature_modal'</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">render</span> <span class="ss">:partial</span> <span class="o">=&gt;</span> <span class="s1">'layouts/mark_job_complete_modal'</span> <span class="cp">%&gt;</span>
+
+    <span class="cp">&lt;%=</span> <span class="n">javascript_include_tag</span> <span class="s2">"application"</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="n">javascript_include_tag</span> <span class="s2">"https://maps.googleapis.com/maps/api/js?key=</span><span class="si">#{</span><span class="no">ENV</span><span class="p">[</span><span class="s1">'MAP_KEY'</span><span class="p">]</span><span class="si">}</span><span class="s2">&amp;sensor=false"</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%=</span> <span class="k">yield</span> <span class="ss">:javascript</span> <span class="cp">%&gt;</span>
+
+    <span class="nt">&lt;script&gt;</span>
+      <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'.js-flash-close'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+          <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parents</span><span class="p">(</span><span class="s1">'.ks-flash-messages'</span><span class="p">).</span><span class="nx">remove</span><span class="p">()</span>
+        <span class="p">})</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'.js-dropdown-toggle'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+          <span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'href'</span><span class="p">);</span>
+          <span class="nx">$</span><span class="p">(</span><span class="nx">target</span><span class="p">).</span><span class="nx">toggleClass</span><span class="p">(</span><span class="s1">'show'</span><span class="p">);</span>
+        <span class="p">});</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">var</span> <span class="nx">current_target</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">);</span>
+          <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">current_target</span><span class="p">.</span><span class="nx">closest</span><span class="p">(</span><span class="s2">".js-dropdown"</span><span class="p">).</span><span class="nx">length</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nx">current_target</span><span class="p">.</span><span class="nx">closest</span><span class="p">(</span><span class="s2">".js-dropdown-toggle"</span><span class="p">).</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">'.js-dropdown'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'show'</span><span class="p">);</span>
+          <span class="p">}</span>
+
+        <span class="p">});</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'.js-sidebar-toggle'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+          <span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'href'</span><span class="p">);</span>
+          <span class="nx">$</span><span class="p">(</span><span class="nx">target</span><span class="p">).</span><span class="nx">toggleClass</span><span class="p">(</span><span class="s1">'show'</span><span class="p">);</span>
+        <span class="p">});</span>
+
+      <span class="p">})</span>
+    <span class="nt">&lt;/script&gt;</span>
+
+    <span class="cp">&lt;%</span> <span class="k">unless</span> <span class="n">masquerading?</span> <span class="o">&amp;&amp;</span> <span class="no">Rails</span><span class="p">.</span><span class="nf">env</span><span class="p">.</span><span class="nf">production?</span> <span class="cp">%&gt;</span>
+      <span class="cp">&lt;%=</span> <span class="n">intercom_script_tag</span> <span class="cp">%&gt;</span>
+    <span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+
+    </div>
+  </div>
+</div>
+
+
+      <footer class="footer">
+        Copyright Kickserv 2015.<br>
+        Created and maintained by the CSS team at Kickserv. Heavily inspired by Github's Primer. <strong>Currently v2.2.1.</strong>
+      </footer>
+    </div>
+
+    <script src="/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      addAnchors(selector);
+    </script>
+  </body>
+</html>
