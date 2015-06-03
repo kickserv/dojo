@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/primer.css': 'scss/primer.scss'
+          'css/dojo.css': 'scss/dojo.scss'
         }
       }
     },
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:primer/primer.git',
+          remote: 'git@github.com:kickserv/dojo.git',
           branch: 'gh-pages'
         }
       }
