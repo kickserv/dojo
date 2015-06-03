@@ -14,7 +14,7 @@ _**Heads up!** We love open source, but Dojo is unlikely to add new features tha
   - [Dependencies](#dependencies)
   - [Running locally](#running-locally)
   - [Publishing](#publishing)
-  - [Dojo stats](#primer-stats)
+  - [Dojo stats](#dojo-stats)
 - [Updating](#updating)
 - [Contributing](#contributing)
 - [Versioning](#versioning)
