@@ -1,12 +1,12 @@
 {
-  "name": "primer",
+  "name": "dojo",
   "version": "2.2.1",
-  "homepage": "http://primercss.io",
+  "homepage": "http://dojo.kickserv.com",
   "author": "GitHub, Inc.",
-  "scss": "./scss/primer.scss",
+  "scss": "./scss/dojo.scss",
   "repository": {
     "type": "git",
-    "url": "https://github.com/primer/primer.git"
+    "url": "https://github.com/kickserv/dojo.git"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
