@@ -29,7 +29,7 @@ You can put multiple paragraphs of text in a flash message—the last paragraph'
 </div>
 {% endexample %}
 
-Should the need arise, you can quickly space out your flash message from surrounding content with a `.flash-messages` wrapper. *Note the extra top and bottom margin in the example below.*
+Should the need arise, you can quickly space out your flash message from surrounding content with a `.flash-messages` wrapper. *Note the default top margin. This is intentional, for use on the main layout.*
 
 {% example html %}
 <div class="flash-messages">
