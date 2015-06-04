@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      Navbar &middot; Dojo
+    </title>
+
+    <link rel="stylesheet" href="/docs.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+
+    <header class="masthead">
+      <div class="container">
+        <a href="/" class="masthead-logo">
+          <span class="dojo-logo"></span>
+          Dojo
+        </a>
+
+        <nav class="masthead-nav">
+          <a  href="/scaffolding">Docs</a>
+          <a href="https://github.com/kickserv/dojo" target="_blank">GitHub</a>
+          <a href="https://github.com/kickserv/dojo/blob/master/README.md#install" target="_blank">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <div class="container">
+      <div class="columns docs-layout">
+  <div class="one-fourth column">
+    
+      <nav class="menu docs-menu">
+  <a class="menu-item " href="/scaffolding/">
+    Scaffolding
+  </a>
+  <a class="menu-item " href="/layout/">
+    Layout
+  </a>
+  <a class="menu-item " href="/type/">
+    Type
+  </a>
+  <a class="menu-item " href="/buttons/">
+    Buttons
+  </a>
+  <a class="menu-item " href="/forms/">
+    Forms
+  </a>
+  <a class="menu-item selected" href="/navbar/">
+    Navbar
+  </a>
+  <a class="menu-item " href="/nav/">
+    Navigation
+  </a>
+  <a class="menu-item " href="/alerts/">
+    Alerts
+  </a>
+  <a class="menu-item " href="/panels/">
+    Panels
+  </a>
+  <a class="menu-item " href="/blankslate/">
+    Blankslate
+  </a>
+  <a class="menu-item " href="/avatars/">
+    Avatars
+  </a>
+  <a class="menu-item " href="/states/">
+    States
+  </a>
+  <a class="menu-item " href="/tooltips/">
+    Tooltips
+  </a>
+  <a class="menu-item " href="/utilities/">
+    Utilities
+  </a>
+</nav>
+
+<nav class="menu docs-menu">
+  <a class="menu-item " href="/guidelines/">
+    Code guidelines
+  </a>
+  <a class="menu-item " href="/colors/">
+    Colors
+  </a>
+  <a class="menu-item " href="/templates/">
+    Templates
+  </a>
+</nav>
+
+    
+  </div>
+  <div class="three-fourths column markdown-body">
+    <h1 class="page-title">
+      Navbar
+    </h1>
+    <div class="markdown-body">
+      <p>Dojo comes with a navbar custom-designed for Kickserv.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents">Contents</a></li>
+  <li><a href="#main-navbar">Main Navbar</a>    <ul>
+      <li><a href="#horizontal-navbar">Horizontal Navbar</a></li>
+    </ul>
+  </li>
+  <li><a href="#subnav">Subnav</a></li>
+</ul>
+
+<h2 id="main-navbar">Main Navbar</h2>
+
+<p>The main navbar contains the Kickserv logo, main app sections, and account menu. The default presentation of the navbar is vertical, to be used as a sidebar.</p>
+
+<div class="docs-example clearfix"><div class="navbar">
+  <div class="navbar-brand">
+    <a href="/" class="brand">
+      <img src="/img/nav_icon.svg" />
+    </a>
+  </div>
+  <div class="navbar-utility">
+    <a href="#usernav" class="utility js-dropdown-toggle">
+      <img class="avatar avatar-small" src="https://avatars3.githubusercontent.com/u/9919?v=3&amp;s=32" width="30" height="30" />
+      <span class="utility-name">Brian Nelson</span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <ul class="nav">
+      <li>
+        <a href="">
+          <i class="octicon octicon-clippy"></i>
+          <span class="nav-label">Estimates</span>
+        </a>
+      </li>
+      <li class="active">
+        <a href="">
+          <i class="octicon octicon-briefcase"></i>
+          <span class="nav-label">Jobs</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="octicon octicon-organization"></i>
+          <span class="nav-label">Contacts</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"brand"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/img/nav_icon.svg"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-utility"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#usernav"</span> <span class="na">class=</span><span class="s">"utility js-dropdown-toggle"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"avatar avatar-small"</span> <span class="na">src=</span><span class="s">"https://avatars3.githubusercontent.com/u/9919?v=3&amp;s=32"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"utility-name"</span><span class="nt">&gt;</span>Brian Nelson<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-clippy"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Estimates<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-briefcase"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Jobs<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-organization"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Contacts<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="horizontal-navbar">Horizontal Navbar</h3>
+
+<p>You can easily change the layout of the navbar by using a <code>.navbar-top</code> class on the <code>body</code>.</p>
+
+<p><strong>Note:</strong> We’re not using a <code>body</code> in this example because it would mess up the page rendering!</p>
+
+<div class="docs-example clearfix"><div class="navbar-top">
+  <div class="grid-frame">
+    <div class="navbar">
+      <div class="navbar-brand">
+        <a href="/" class="brand">
+          <img src="/img/nav_icon.svg" />
+        </a>
+      </div>
+      <div class="navbar-utility">
+        <a href="" class="utility">
+          <img class="avatar avatar-small" src="https://avatars3.githubusercontent.com/u/9919?v=3&amp;s=32" width="30" height="30" />
+          <span class="utility-name">Brian Nelson</span>
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <ul class="nav">
+          <li>
+            <a href="">
+              <i class="octicon octicon-clippy"></i>
+              <span class="nav-label">Estimates</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="">
+              <i class="octicon octicon-briefcase"></i>
+              <span class="nav-label">Jobs</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="octicon octicon-organization"></i>
+              <span class="nav-label">Contacts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-top"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-frame"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"brand"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/img/nav_icon.svg"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-utility"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"utility"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"avatar avatar-small"</span> <span class="na">src=</span><span class="s">"https://avatars3.githubusercontent.com/u/9919?v=3&amp;s=32"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"utility-name"</span><span class="nt">&gt;</span>Brian Nelson<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-clippy"</span><span class="nt">&gt;&lt;/i&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Estimates<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-briefcase"</span><span class="nt">&gt;&lt;/i&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Jobs<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-organization"</span><span class="nt">&gt;&lt;/i&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Contacts<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="subnav">Subnav</h2>
+
+<p>On certain pages, it may be necessary to include a subnav bar. Use the following structure and include as necessary.</p>
+
+<div class="docs-example clearfix"><div class="subnav">
+  <div class="grid-block">
+    <div class="grid-content">
+      <ul class="nav">
+        <li class="active">
+          <a href="/schedule">
+            Agenda
+          </a>
+        </li>
+        <li>
+          <a href="/calendar">
+            Calendar
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid-block shrink">
+    <div class="grid-content">
+      <button type="button" class="btn btn-action btn-sm new-event">New Event</button>
+    </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"subnav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/schedule"</span><span class="nt">&gt;</span>
+            Agenda
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/calendar"</span><span class="nt">&gt;</span>
+            Calendar
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block shrink"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-action btn-sm new-event"</span><span class="nt">&gt;</span>New Event<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+    </div>
+  </div>
+</div>
+
+
+      <footer class="footer">
+        Copyright Kickserv 2015.<br>
+        Created and maintained by the CSS team at Kickserv. Heavily inspired by Github's Primer. <strong>Currently v0.1.2.</strong>
+      </footer>
+    </div>
+
+    <script src="/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      addAnchors(selector);
+    </script>
+  </body>
+</html>

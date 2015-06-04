@@ -58,11 +58,17 @@
   <a class="menu-item " href="/forms/">
     Forms
   </a>
+  <a class="menu-item " href="/navbar/">
+    Navbar
+  </a>
   <a class="menu-item " href="/nav/">
     Navigation
   </a>
   <a class="menu-item " href="/alerts/">
     Alerts
+  </a>
+  <a class="menu-item " href="/panels/">
+    Panels
   </a>
   <a class="menu-item " href="/blankslate/">
     Blankslate
@@ -121,45 +127,78 @@
     ...
   <span class="nt">&lt;/head&gt;</span>
 
+  <span class="c">&lt;!-- Add or remove .navbar-top to body to toggle horizontal navbar--&gt;</span>
   <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"ks-app"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-frame"</span><span class="nt">&gt;</span>
 
-    <span class="c">&lt;!-- Add or remove .vertical to toggle horizontal navbar--&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-frame vertical"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-brand"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"brand"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/img/nav_icon.svg"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-utility"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#usernav"</span> <span class="na">class=</span><span class="s">"utility js-dropdown-toggle"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"avatar avatar-small"</span> <span class="na">src=</span><span class="s">"https://avatars3.githubusercontent.com/u/9919?v=3&amp;s=32"</span> <span class="na">width=</span><span class="s">"30"</span> <span class="na">height=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"utility-name"</span><span class="nt">&gt;</span>Brian Nelson<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-clippy"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Estimates<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-briefcase"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Jobs<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-organization"</span><span class="nt">&gt;&lt;/i&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"nav-label"</span><span class="nt">&gt;</span>Contacts<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--.navbar--&gt;</span>
 
-      <span class="c">&lt;!-- Navbar --&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block shrink"</span> <span class="na">id=</span><span class="s">"navbar"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block shrink"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-content ks-logo text-center"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
-              <span class="cp">&lt;%=</span> <span class="n">image_tag</span> <span class="s2">"connect/nav_icon.svg"</span><span class="p">,</span> <span class="ss">class: </span><span class="s2">"ks-logo"</span><span class="p">,</span> <span class="ss">alt: </span><span class="s2">"Connect"</span><span class="p">,</span> <span class="ss">height: </span><span class="s2">"54"</span> <span class="cp">%&gt;</span>
-            <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block"</span> <span class="na">id=</span><span class="s">"ks-nav"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-content ks-nav"</span><span class="nt">&gt;</span>
-            Main Nav Choices
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block shrink"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-content ks-usernav"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#usernav"</span> <span class="na">class=</span><span class="s">"js-dropdown-toggle"</span><span class="nt">&gt;</span>
-              <span class="cp">&lt;%=</span> <span class="n">employee_avatar</span><span class="p">(</span><span class="n">current_user</span><span class="p">)</span> <span class="cp">%&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ks-usernav-name"</span><span class="nt">&gt;</span><span class="cp">&lt;%=</span> <span class="n">current_user</span><span class="p">.</span><span class="nf">name</span> <span class="cp">%&gt;</span><span class="nt">&lt;/span&gt;</span>
-            <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--#navbar--&gt;</span>
-
-      <span class="c">&lt;!-- Main Content --&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block vertical"</span> <span class="na">id=</span><span class="s">"content"</span><span class="nt">&gt;</span>
-        <span class="cp">&lt;%=</span> <span class="k">yield</span><span class="p">(</span><span class="ss">:subnav</span><span class="p">)</span> <span class="cp">%&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block ks-content-block"</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"subnav"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-content"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/schedule"</span><span class="nt">&gt;</span>
+                    Agenda
+                  <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/calendar"</span><span class="nt">&gt;</span>
+                    Calendar
+                  <span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+              <span class="nt">&lt;/ul&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block shrink"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-content"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-action btn-sm new-event"</span><span class="nt">&gt;</span>New Event<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--.subnav--&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-block"</span><span class="nt">&gt;</span>
           ...
         <span class="nt">&lt;/div&gt;</span>
+
       <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--#content--&gt;</span>
-
     <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--.grid-frame--&gt;</span>
-
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span></code></pre></div>
 

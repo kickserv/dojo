@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      Panels &middot; Dojo
+    </title>
+
+    <link rel="stylesheet" href="/docs.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+
+    <header class="masthead">
+      <div class="container">
+        <a href="/" class="masthead-logo">
+          <span class="dojo-logo"></span>
+          Dojo
+        </a>
+
+        <nav class="masthead-nav">
+          <a  href="/scaffolding">Docs</a>
+          <a href="https://github.com/kickserv/dojo" target="_blank">GitHub</a>
+          <a href="https://github.com/kickserv/dojo/blob/master/README.md#install" target="_blank">Install</a>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <div class="container">
+      <div class="columns docs-layout">
+  <div class="one-fourth column">
+    
+      <nav class="menu docs-menu">
+  <a class="menu-item " href="/scaffolding/">
+    Scaffolding
+  </a>
+  <a class="menu-item " href="/layout/">
+    Layout
+  </a>
+  <a class="menu-item " href="/type/">
+    Type
+  </a>
+  <a class="menu-item " href="/buttons/">
+    Buttons
+  </a>
+  <a class="menu-item " href="/forms/">
+    Forms
+  </a>
+  <a class="menu-item " href="/navbar/">
+    Navbar
+  </a>
+  <a class="menu-item " href="/nav/">
+    Navigation
+  </a>
+  <a class="menu-item " href="/alerts/">
+    Alerts
+  </a>
+  <a class="menu-item selected" href="/panels/">
+    Panels
+  </a>
+  <a class="menu-item " href="/blankslate/">
+    Blankslate
+  </a>
+  <a class="menu-item " href="/avatars/">
+    Avatars
+  </a>
+  <a class="menu-item " href="/states/">
+    States
+  </a>
+  <a class="menu-item " href="/tooltips/">
+    Tooltips
+  </a>
+  <a class="menu-item " href="/utilities/">
+    Utilities
+  </a>
+</nav>
+
+<nav class="menu docs-menu">
+  <a class="menu-item " href="/guidelines/">
+    Code guidelines
+  </a>
+  <a class="menu-item " href="/colors/">
+    Colors
+  </a>
+  <a class="menu-item " href="/templates/">
+    Templates
+  </a>
+</nav>
+
+    
+  </div>
+  <div class="three-fourths column markdown-body">
+    <h1 class="page-title">
+      Panels
+    </h1>
+    <div class="markdown-body">
+      <p>Dojo panels should be used to separate logical sections of Kickserv content.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents">Contents</a></li>
+  <li><a href="#structure">Structure</a></li>
+  <li><a href="#with-sidebar">With Sidebar</a></li>
+  <li><a href="#with-tables">With Tables</a></li>
+</ul>
+
+<h2 id="structure">Structure</h2>
+
+<p>Panels must follow a structure as indicated below.</p>
+
+<div class="docs-example clearfix"><div class="panel">
+  <div class="panel-header">
+    <div class="panel-content">
+      <h3 class="panel-title">Using Dojo be like...</h3>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="panel-content text-center">
+      <img src="http://gifs.joelglovier.com/gangsta/42-Snoop-Bounce.gif" />
+    </div>
+  </div>
+  <div class="panel-footer">
+    <div class="panel-content">
+      <div class="form-actions">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>Using Dojo be like...<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-content text-center"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://gifs.joelglovier.com/gangsta/42-Snoop-Bounce.gif"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-actions"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="with-sidebar">With Sidebar</h2>
+
+<p>In many cases, it may be necessary to include content in a toggleable sidebar. Note the nesting of the <code>.panel-sidebar</code>.</p>
+
+<p><strong>Note:</strong> Sidebars are hidden by default. Add <code>.show</code> to show the sidebar.</p>
+
+<div class="docs-example clearfix"><div class="panel">
+  <div class="panel-header">
+    <div class="panel-content">
+      <a href="#sidebar" class="right js-toggle">
+        Show Sidebar
+        <i class="octicon octicon-settings icon-right"></i>
+      </a>
+      <h3 class="panel-title">How does the sidebar work?</h3>
+    </div>
+  </div>
+  <div class="panel-body-with-sidebar">
+    <div class="panel-body">
+      <div class="panel-content text-center">
+        <img src="http://gifs.joelglovier.com/mind-blown/magic.gif" />
+      </div>
+    </div>
+    <div class="panel-sidebar show" id="sidebar">
+      <div class="panel-content">
+        This sidebar area will grow to accommodate your content. Make sure you set a max-width when necessary.
+      </div>
+    </div>
+  </div>
+</div></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#sidebar"</span> <span class="na">class=</span><span class="s">"right js-toggle"</span><span class="nt">&gt;</span>
+        Show Sidebar
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-settings icon-right"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"panel-title"</span><span class="nt">&gt;</span>How does the sidebar work?<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body-with-sidebar"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-content text-center"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://gifs.joelglovier.com/mind-blown/magic.gif"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-sidebar show"</span> <span class="na">id=</span><span class="s">"sidebar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"panel-content"</span><span class="nt">&gt;</span>
+        This sidebar area will grow to accommodate your content. Make sure you set a max-width when necessary.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>You can use a script like this to create a toggle for the sidebar.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">'.js-toggle'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">'href'</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nx">target</span><span class="p">).</span><span class="nx">toggleClass</span><span class="p">(</span><span class="s1">'show'</span><span class="p">);</span>
+<span class="p">});</span></code></pre></div>
+
+<h2 id="with-tables">With Tables</h2>
+
+    </div>
+  </div>
+</div>
+
+
+      <footer class="footer">
+        Copyright Kickserv 2015.<br>
+        Created and maintained by the CSS team at Kickserv. Heavily inspired by Github's Primer. <strong>Currently v0.1.2.</strong>
+      </footer>
+    </div>
+
+    <script src="/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      addAnchors(selector);
+    </script>
+  </body>
+</html>
