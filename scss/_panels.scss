@@ -1,30 +1,98 @@
+.panel,
+.panel-header,
+.panel-body,
+.panel-body-with-sidebar,
+.panel-footer,
+.panel-sidebar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-items: stretch;
+       -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+          justify-content: flex-start;
+   -webkit-order: 0;
+  -ms-flex-order: 0;
+           order: 0;
+  height: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 .panel {
   background: #fff;
   border: 1px solid $border;
   border-radius: $border-radius;
   margin: 0 1rem 1rem;
-  .panel-content {
-    padding: 0;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+.panel,
+.panel-body,
+.panel-body-with-sidebar {
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.panel-header,
+.panel-footer,
+.panel-sidebar {
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.panel-sidebar {
+  border-left: 1px solid $border;
+  display: none;
+  &.show {
+    display: block;
   }
-  .panel-sidebar {
-    border-left: 1px solid $border;
-    display: none;
-    &.show {
-      display: block;
-    }
-  }
-  .panel-header {
-    background: $panel-header-back;
-    border-bottom: 1px solid $border;
-    border-top-right-radius: $border-radius - 1;
-    border-top-left-radius: $border-radius - 1;
+}
+.panel-content {
+  display: block;
+  overflow-y: auto;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.panel-header .panel-content {
+  background: $panel-header-back;
+  background-image: linear-gradient($panel-header-back, darken($panel-header-back, 1%));
+  border-bottom: 1px solid $border;
+  border-top-right-radius: $border-radius - 1;
+  border-top-left-radius: $border-radius - 1;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  .panel-title {
+    display: inline-block;
     font-size: 13px;
     font-weight: bold;
-    padding: .5rem 1rem;
-    text-transform: uppercase;
-    background-image: linear-gradient($panel-header-back, darken($panel-header-back, 1%));
-    .nav-list {
-      margin-left: -.5rem;
-    }
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 3px 0 0;
   }
+}
+.panel-footer .panel-content {
+  border-top: 1px solid $border;
+  padding: .5rem 1rem;
+}
+.panel-body .panel-table {
+  // table styles here
 }

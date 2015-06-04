@@ -305,6 +305,28 @@ body {
   .flex-table-item > .btn {
     margin-left: 10px;
   }
+
+  .grid-frame {
+    height: auto;
+  }
+
+  .navbar-top {
+    .navbar {
+      height: 54px;
+    }
+  }
+
+  .subnav {
+    .grid-block:first-child {
+      .grid-content {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .panel-sidebar#sidebar {
+    max-width: 150px;
+  }
 }
 
 .page-title + .markdown-body > p:first-child {

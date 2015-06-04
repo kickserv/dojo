@@ -3,14 +3,16 @@ $background-color: #EFF0F5;
 $border: #e7e7ea;
 
 // Navbar
-$nav-back: #fff;
-$nav-color: #a0a6b4;
-$nav-active: #e7e7eA;
 $nav-primary-back: #53607d;
 $nav-primary-color: #dadce1;
 $nav-primary-color-hover: #fff;
 $nav-primary-active: #3c415f;
 $nav-break: 600px; // below this viewport width, only nav icons are shown
+
+// Subnav
+$subnav-back: #fff;
+$subnav-color: #a0a6b4;
+$subnav-active: #e7e7eA;
 
 // Border Radius
 $border-radius: 3px;
