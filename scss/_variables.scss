@@ -1,6 +1,8 @@
 // Gloabls
 $background-color: #EFF0F5;
 $border: #e7e7ea;
+$container-width: 100% !default;
+$grid-gutter:     10px !default;
 
 // Navbar
 $nav-primary-back: #53607d;
@@ -25,10 +27,6 @@ $td-padding-top: 10px;
 $td-padding-bottom: $td-padding-top;
 $td-padding-left: 10px;
 $td-padding-right: $td-padding-left;
-
-
-$container-width: 100% !default;
-$grid-gutter:     10px !default;
 
 // Brand colors
 $link-blue:        #4078c0 !default;
