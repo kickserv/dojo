@@ -79,3 +79,22 @@ $('.js-toggle').on("click", function() {
 {% endhighlight %}
 
 ## With Tables
+
+Use the following structure to contain a table in a panel. Note the use of `.panel-table` in place of `.panel-content`.
+
+{% highlight html %}
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-content">
+      <h3 class="panel-title">How does the sidebar work?</h3>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="panel-table">
+      <table class="table">
+        ...
+      </table>
+    </div>
+  </div>
+</div>
+{% endhighlight %}

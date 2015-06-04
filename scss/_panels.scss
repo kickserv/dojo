@@ -59,7 +59,8 @@
     display: block;
   }
 }
-.panel-content {
+.panel-content,
+.panel-table {
   display: block;
   overflow-y: auto;
   padding: 1rem;
@@ -94,5 +95,19 @@
   padding: .5rem 1rem;
 }
 .panel-body .panel-table {
-  // table styles here
+  padding: 0;
+  td {
+    border-left: 1px solid $border;
+    font-size: 13px;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  tr:last-child td,
+  td.with-blankslate {
+    border-bottom: none;
+  }
 }

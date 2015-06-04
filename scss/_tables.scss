@@ -1,0 +1,59 @@
+.table {
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  th, td {
+    border-bottom: 1px solid $border;
+    padding: $td-padding-top $td-padding-right;
+  }
+  td {
+    border-left: 1px solid $border;
+    font-size: 13px;
+    &:last-child {
+      border-right: 1px solid $border;
+    }
+  }
+}
+
+.table-input {
+  height: 1px; // A bit of a hack, but needed to use height: 100% on the label
+  padding: 0;
+  position: relative;
+  label {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: darken($panel-header-back, 5%);
+    }
+  }
+  input {
+    cursor: pointer;
+  }
+}
+th.table-input {
+  label:hover {
+    background: none;
+  }
+}
+
+td.table-action {
+  height: 1px;
+  padding: 0;
+  a {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: $td-padding-top $td-padding-right;
+    &:hover {
+      background-color: darken($panel-header-back, 5%);
+      text-decoration: none;
+    }
+  }
+}

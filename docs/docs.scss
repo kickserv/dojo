@@ -25,6 +25,17 @@
 // Overrides
 //
 
+.markdown-body {
+  table {
+    display: table;
+    margin-bottom: 0;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+  }
+}
+
 // Global type
 html {
   font-size: 16px;
