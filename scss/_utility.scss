@@ -84,3 +84,37 @@
   background-color: #ffebe8;
   border: 1px solid #dd3c10;
 }
+
+// Animation
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+       -o-transition: opacity .15s linear;
+          transition: opacity .15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.close {
+  float: right;
+  padding: 17px;     // bigger hit area
+  margin-top: -15px; // negative margins to account for bigger padding
+  margin-right: -15px;
+  margin-left: 20px;
+  color: inherit;
+  opacity: .6;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+}
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
