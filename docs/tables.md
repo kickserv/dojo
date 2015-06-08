@@ -5,6 +5,11 @@ title: Tables
 
 Tables should be used to display data like Events, Jobs, or Contacts.
 
+<div class="flash">
+  <strong>Heads up!</strong> The display of table inputs and table actions is broken in the documentation site. The hover state will fill the entire table cell when used in production.
+</div>
+
+
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
@@ -113,7 +118,7 @@ If no data is available to display in a table, use a blankslate. *Note the use o
       <td colspan="3" class="with-blankslate">
         <div class="blankslate spacious clean-background">
           <span class="mega-octicon octicon-broadcast"></span>
-          <h3>Nothing to see here...</h3> 
+          <h3>Nothing to see here...</h3>
           <p><a href="">Add a new contact</a>, or why not kick back and relax?</p>
         </div>
       </td>
