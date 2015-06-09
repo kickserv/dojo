@@ -12,8 +12,11 @@ Dojo comes with several navigation components. Some were designed with singular 
 
 ## Navbar
 
-The main navbar contains the Kickserv logo, main app sections, and account menu. The default presentation of the navbar is vertical, to be used as a sidebar.
+The main navbar contains the Kickserv logo, main app sections, and account menu.
 
+### Vertical Navbar
+
+The default presentation of the navbar is vertical, to be used as a sidebar.
 
 {% example html %}
 <div class="navbar">
