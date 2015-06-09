@@ -72,12 +72,16 @@
   border-bottom: 1px solid #e5e5e5;
 }
 .modal-title {
+  display: inline-block;
   margin: 0;
   line-height: 1.42857143;
 }
 .modal-body {
   position: relative;
   padding: 15px;
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 .modal-footer {
   padding: 15px;

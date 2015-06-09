@@ -10,7 +10,7 @@ Dojo panels should be used to separate logical sections of Kickserv content.
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Structure
+## Panel Structure
 
 Panels must follow a structure as indicated below.
 

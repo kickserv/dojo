@@ -113,8 +113,10 @@
 }
 button.close {
   -webkit-appearance: none;
-  padding: 0;
   cursor: pointer;
   background: transparent;
   border: 0;
+}
+.modal-header .close {
+  padding: 15px;
 }
