@@ -44,6 +44,7 @@ td.table-action {
   height: 1px;
   padding: 0;
   a {
+    color: $brand-gray-light;
     cursor: pointer;
     height: 100%;
     padding: 0 4px;
@@ -53,7 +54,16 @@ td.table-action {
     // padding: $td-padding-top $td-padding-right;
     &:hover {
       background-color: darken($panel-header-back, 5%);
+      color: $link-blue;
       text-decoration: none;
+    }
+  }
+}
+td.table-action-danger {
+  a {
+    &:hover {
+      background-color: lighten($brand-red, 55%);
+      color: $brand-red;
     }
   }
 }

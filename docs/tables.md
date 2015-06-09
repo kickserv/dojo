@@ -98,6 +98,34 @@ For a link that uses the entire cell for a click target, use the following html.
 </table>
 {% endexample %}
 
+### Danger Table Action
+
+For potentially dangerous table actions, use `.table-action-danger` in addition. These can only be used in the `tbody` or `tfoot`.
+
+{% example html %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email Address</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Norman the Ninja</td> 
+      <td>norman@kickserv.com</td>
+      <td class="table-action table-action-danger">
+        <a href="">
+          <i class="octicon octicon-trashcan"> </i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endexample %}
+
+
 ## With Blankslates
 
 If no data is available to display in a table, use a blankslate. *Note the use of the wrapper class on the table cell.*
