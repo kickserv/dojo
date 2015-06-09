@@ -140,7 +140,7 @@ The menu is a vertical list of navigational links. **A menu's width and placemen
 
 {% example html %}
 <nav class="menu">
-  <a class="menu-item selected" href="#">Account</a>
+  <a class="menu-item active" href="#">Account</a>
   <a class="menu-item" href="#">Profile</a>
   <a class="menu-item" href="#">Emails</a>
   <a class="menu-item" href="#">Notifications</a>
@@ -151,7 +151,7 @@ There are a few subcomponents and add-ons that work well with the menu, includin
 
 {% example html %}
 <nav class="menu">
-  <a class="menu-item selected" href="#">
+  <a class="menu-item active" href="#">
     <span class="octicon octicon-tools"></span>
     Account
   </a>
@@ -176,7 +176,7 @@ You can also add optional headings to a menu. Feel free to use nearly any semant
 {% example html %}
 <nav class="menu">
   <span class="menu-heading">Menu heading</span>
-  <a class="menu-item selected" href="#">Account</a>
+  <a class="menu-item active" href="#">Account</a>
   <a class="menu-item" href="#">Profile</a>
   <a class="menu-item" href="#">Emails</a>
   <a class="menu-item" href="#">Notifications</a>
@@ -191,7 +191,7 @@ When you need to toggle between different views, consider using a tabnav. It'll 
 {% example html %}
 <div class="tabnav">
   <nav class="tabnav-tabs">
-    <a href="#" class="tabnav-tab selected">Foo tab</a>
+    <a href="#" class="tabnav-tab active">Foo tab</a>
     <a href="#" class="tabnav-tab">Bar tab</a>
   </nav>
 </div>
@@ -203,7 +203,7 @@ Use `.right` to align additional elements in the `.tabnav`:
 <div class="tabnav">
   <a class="btn btn-sm right" href="#">Button</a>
   <nav class="tabnav-tabs">
-    <a href="#" class="tabnav-tab selected">Foo Tab</a>
+    <a href="#" class="tabnav-tab active">Foo Tab</a>
     <a href="#" class="tabnav-tab">Bar Tab</a>
   </nav>
 </div>
@@ -217,7 +217,7 @@ Additional bits of text and links can be styled for optimal placement with `.tab
     Tabnav widget text here.
   </div>
   <nav class="tabnav-tabs">
-    <a href="#" class="tabnav-tab selected">Foo Tab</a>
+    <a href="#" class="tabnav-tab active">Foo Tab</a>
     <a href="#" class="tabnav-tab">Bar Tab</a>
   </nav>
 </div>
@@ -234,7 +234,7 @@ Additional bits of text and links can be styled for optimal placement with `.tab
     </a>
   </div>
   <nav class="tabnav-tabs">
-    <a href="#" class="tabnav-tab selected">Foo Tab</a>
+    <a href="#" class="tabnav-tab active">Foo Tab</a>
     <a href="#" class="tabnav-tab">Bar Tab</a>
   </nav>
 </div>
@@ -272,50 +272,33 @@ Add quick, dynamic tab functionality to transition through panes of local conten
 
 Enable tabbable tabs via JavaScript (each tab needs to be activated individually):
 
+{% highlight js %}
 $('#myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
+{% endhighlight %}
 
 You can activate individual tabs in several ways:
 
+{% highlight js %}
 $('#myTab a[href="#profile"]').tab('show') // Select tab by name
 $('#myTab a:first').tab('show') // Select first tab
 $('#myTab a:last').tab('show') // Select last tab
 $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
-
-#### Markup
-You can activate a tab or pill navigation without writing any JavaScript by simply specifying data-toggle="tab" or data-toggle="pill" on an element. Adding the nav and nav-tabs classes to the tab ul will apply the Bootstrap tab styling, while adding the nav and nav-pills classes will apply pill styling.
-
-<div role="tabpanel">
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-  </div>
-
-</div>
+{% endhighlight %}
 
 #### Fade effect
 To make tabs fade in, add .fade to each .tab-pane. The first tab pane must also have .in to properly fade in initial content.
 
+{% highlight html %}
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
   <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
   <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
   <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
 </div>
+{% endhighlight %}
 
 #### Methods
 
@@ -323,46 +306,74 @@ To make tabs fade in, add .fade to each .tab-pane. The first tab pane must also 
 
 Activates a tab element and content container. Tab should have either a data-target or an href targeting a container node in the DOM.
 
-<ul class="nav nav-tabs" role="tablist" id="myTab">
-  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-</ul>
+{% highlight html %}
+<div class="tabnav">
+  <nav class="tabnav-tabs">
+    <a href="#home" class="tabnav-tab active" data-toggle="tab" id="home_tab">Home</a>
+    <a href="#profile" class="tabnav-tab" data-toggle="tab">Profile</a>
+    <a href="#third" class="tabnav-tab" data-toggle="tab">Third</a>
+  </nav>
+</div>
 
 <div class="tab-content">
-  <div role="tabpanel" class="tab-pane active" id="home">...</div>
-  <div role="tabpanel" class="tab-pane" id="profile">...</div>
-  <div role="tabpanel" class="tab-pane" id="messages">...</div>
-  <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  <div class="tab-pane active" id="home">...</div>
+  <div class="tab-pane" id="profile">...</div>
+  <div class="tab-pane" id="third">...</div>
 </div>
 
 <script>
   $(function () {
-    $('#myTab a:last').tab('show')
+    $('#home_tab').tab('show')
   })
 </script>
+{% endhighlight %}
 
 #### Events
 
 When showing a new tab, the events fire in the following order:
 
-hide.bs.tab (on the current active tab)
-show.bs.tab (on the to-be-shown tab)
-hidden.bs.tab (on the previous active tab, the same one as for the hide.bs.tab event)
-shown.bs.tab (on the newly-active just-shown tab, the same one as for the show.bs.tab event)
-If no tab was already active, then the hide.bs.tab and hidden.bs.tab events will not be fired.
+1. `hide.bs.tab` (on the current active tab)
+2. `show.bs.tab` (on the to-be-shown tab)
+3. `hidden.bs.tab` (on the previous active tab, the same one as for the hide.bs.tab event)
+4. `shown.bs.tab` (on the newly-active just-shown tab, the same one as for the show.bs.tab event)
 
-Event Type	Description
-show.bs.tab	This event fires on tab show, but before the new tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.
-shown.bs.tab	This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.
-hide.bs.tab	This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use event.target and event.relatedTarget to target the current active tab and the new soon-to-be-active tab, respectively.
-hidden.bs.tab	This event fires after a new tab is shown (and thus the previous active tab is hidden). Use event.target and event.relatedTarget to target the previous active tab and the new active tab, respectively.
-Copy
+If no tab was already active, then the `hide.bs.tab` and `hidden.bs.tab` events will not be fired.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Event Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>show.bs.tab</td>
+      <td>This event fires on tab show, but before the new tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.</td>
+    </tr>
+    <tr>
+      <td>shown.bs.tab</td>
+      <td>This event fires on tab show after a tab has been shown. Use event.target and event.relatedTarget to target the active tab and the previous active tab (if available) respectively.</td>
+    </tr>
+    <tr>
+      <td>hide.bs.tab</td>
+      <td>This event fires when a new tab is to be shown (and thus the previous active tab is to be hidden). Use event.target and event.relatedTarget to target the current active tab and the new soon-to-be-active tab, respectively.</td>
+    </tr>
+    <tr>
+      <td>hidden.bs.tab</td>
+      <td>This event fires after a new tab is shown (and thus the previous active tab is hidden). Use event.target and event.relatedTarget to target the previous active tab and the new active tab, respectively.</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Example
+
+{% highlight js %}
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   e.target // newly activated tab
   e.relatedTarget // previous active tab
 })
+{% endhighlight %}
 
 
 ## Filter list
@@ -372,7 +383,7 @@ A vertical list of filters. Grey text on white background. Selecting a filter fr
 {% example html %}
 <ul class="filter-list">
   <li>
-    <a href="#" class="filter-item selected">
+    <a href="#" class="filter-item active">
       <span class="count">21</span>
       First filter
     </a>

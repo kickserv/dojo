@@ -116,7 +116,7 @@ Activate a modal without writing JavaScript. Set `data-toggle="modal"` on a cont
 
 Call a modal with id `myModal` with a single line of JavaScript:
 
-{% highlight html %}
+{% highlight js %}
 $('#myModal').modal(options)
 {% endhighlight %}
 
@@ -124,7 +124,7 @@ $('#myModal').modal(options)
 
 Options can be passed via data attributes or JavaScript. For data attributes, append the option name to `data-`, as in `data-backdrop=""`.
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -161,7 +161,7 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
 
 Activates your content as a modal. Accepts an optional options object.
 
-{% highlight html %}
+{% highlight js %}
 $('#myModal').modal({
   keyboard: false
 })
@@ -171,7 +171,7 @@ $('#myModal').modal({
 
 Manually toggles a modal. Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs).
 
-{% highlight html %}
+{% highlight js %}
 $('#myModal').modal('toggle')
 {% endhighlight %}
 
@@ -179,7 +179,7 @@ $('#myModal').modal('toggle')
 
 Manually opens a modal. Returns to the caller before the modal has actually been shown (i.e. before the shown.bs.modal event occurs).
 
-{% highlight html %}
+{% highlight js %}
 $('#myModal').modal('show')
 {% endhighlight %}
 
@@ -187,7 +187,7 @@ $('#myModal').modal('show')
 
 Manually hides a modal. Returns to the caller before the modal has actually been hidden (i.e. before the hidden.bs.modal event occurs).
 
-{% highlight html %}
+{% highlight js %}
 $('#myModal').modal('hide')
 {% endhighlight %}
 
@@ -197,7 +197,7 @@ Readjusts the modal's positioning to counter a scrollbar in case one should appe
 
 Only needed when the height of the modal changes while it is open.
 
-{% highlight html %}
+{% highlight js %}
 $('#myModal').modal('handleUpdate')
 {% endhighlight %}
 
@@ -207,7 +207,7 @@ Bootstrap's modal class exposes a few events for hooking into modal functionalit
 
 All modal events are fired at the modal itself (i.e. at the `<div class="modal">`).
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Event Type</th>
@@ -240,7 +240,7 @@ All modal events are fired at the modal itself (i.e. at the `<div class="modal">
 
 #### Example
 
-{% highlight html %}
+{% highlight js %}
 $('#myModal').on('hidden.bs.modal', function (e) {
   // do something...
 })
