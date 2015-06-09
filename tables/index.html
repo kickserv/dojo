@@ -112,17 +112,16 @@
     <div class="markdown-body">
       <p>Tables should be used to display data like Events, Jobs, or Contacts.</p>
 
-<div class="flash">
-  <strong>Heads up!</strong> The display of table inputs and table actions is broken in the documentation site. The hover state will fill the entire table cell when used in production.
-</div>
-
 <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
   <li><a href="#contents">Contents</a></li>
   <li><a href="#structure">Structure</a></li>
   <li><a href="#table-input">Table Input</a></li>
-  <li><a href="#table-action">Table Action</a></li>
+  <li><a href="#table-action">Table Action</a>    <ul>
+      <li><a href="#danger-table-action">Danger Table Action</a></li>
+    </ul>
+  </li>
   <li><a href="#with-blankslates">With Blankslates</a></li>
 </ul>
 
@@ -237,6 +236,51 @@
       <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-action"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
           <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-megaphone"</span><span class="nt">&gt;</span> <span class="nt">&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
+
+<h3 id="danger-table-action">Danger Table Action</h3>
+
+<p>For potentially dangerous table actions, use <code>.table-action-danger</code> in addition. These can only be used in the <code>tbody</code> or <code>tfoot</code>.</p>
+
+<div class="docs-example clearfix"><table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email Address</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Norman the Ninja</td>
+      <td>norman@kickserv.com</td>
+      <td class="table-action table-action-danger">
+        <a href="">
+          <i class="octicon octicon-trashcan"> </i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Name<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Email Address<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Norman the Ninja<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>norman@kickserv.com<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td</span> <span class="na">class=</span><span class="s">"table-action table-action-danger"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"octicon octicon-trashcan"</span><span class="nt">&gt;</span> <span class="nt">&lt;/i&gt;</span>
         <span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>

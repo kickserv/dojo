@@ -289,13 +289,13 @@
 
 <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">$('#myModal').modal(options)</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span></code></pre></div>
 
 <h3 id="options">Options</h3>
 
 <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -332,27 +332,27 @@
 
 <p>Activates your content as a modal. Accepts an optional options object.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">$('#myModal').modal({
-  keyboard: false
-})</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">({</span>
+  <span class="na">keyboard</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">})</span></code></pre></div>
 
 <h4 id="modaltoggle">.modal(‘toggle’)</h4>
 
 <p>Manually toggles a modal. Returns to the caller before the modal has actually been shown or hidden (i.e. before the shown.bs.modal or hidden.bs.modal event occurs).</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">$('#myModal').modal('toggle')</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'toggle'</span><span class="p">)</span></code></pre></div>
 
 <h4 id="modalshow">.modal(‘show’)</h4>
 
 <p>Manually opens a modal. Returns to the caller before the modal has actually been shown (i.e. before the shown.bs.modal event occurs).</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">$('#myModal').modal('show')</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'show'</span><span class="p">)</span></code></pre></div>
 
 <h4 id="modalhide">.modal(‘hide’)</h4>
 
 <p>Manually hides a modal. Returns to the caller before the modal has actually been hidden (i.e. before the hidden.bs.modal event occurs).</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">$('#myModal').modal('hide')</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'hide'</span><span class="p">)</span></code></pre></div>
 
 <h4 id="modalhandleupdate">.modal(‘handleUpdate’)</h4>
 
@@ -360,7 +360,7 @@
 
 <p>Only needed when the height of the modal changes while it is open.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">$('#myModal').modal('handleUpdate')</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="s1">'handleUpdate'</span><span class="p">)</span></code></pre></div>
 
 <h3 id="events">Events</h3>
 
@@ -368,7 +368,7 @@
 
 <p>All modal events are fired at the modal itself (i.e. at the <code>&lt;div class="modal"&gt;</code>).</p>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Event Type</th>
@@ -401,9 +401,9 @@
 
 <h4 id="example">Example</h4>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">$('#myModal').on('hidden.bs.modal', function (e) {
-  // do something...
-})</code></pre></div>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myModal'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'hidden.bs.modal'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// do something...</span>
+<span class="p">})</span></code></pre></div>
 
 
     </div>
