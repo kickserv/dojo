@@ -33,6 +33,11 @@
     overflow: auto;
     word-break: normal;
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    td {
+      .table-action, .table-input {
+        padding: 0;
+      }
+    }
   }
   .modal {
     h1,
@@ -341,6 +346,19 @@ body {
     .grid-block:first-child {
       .grid-content {
         padding-left: 0;
+      }
+    }
+  }
+  table {
+    display: table;
+    margin-bottom: 0;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    td {
+      &.table-action, &.table-input {
+        padding: 0;
       }
     }
   }

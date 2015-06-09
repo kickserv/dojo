@@ -5,15 +5,10 @@ title: Tables
 
 Tables should be used to display data like Events, Jobs, or Contacts.
 
-<div class="flash">
-  <strong>Heads up!</strong> The display of table inputs and table actions is broken in the documentation site. The hover state will fill the entire table cell when used in production.
-</div>
-
-
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+{:toc} 
 
 ## Structure
 
@@ -113,7 +108,7 @@ For potentially dangerous table actions, use `.table-action-danger` in addition.
   </thead>
   <tbody>
     <tr>
-      <td>Norman the Ninja</td> 
+      <td>Norman the Ninja</td>
       <td>norman@kickserv.com</td>
       <td class="table-action table-action-danger">
         <a href="">
@@ -124,7 +119,6 @@ For potentially dangerous table actions, use `.table-action-danger` in addition.
   </tbody>
 </table>
 {% endexample %}
-
 
 ## With Blankslates
 
