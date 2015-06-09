@@ -23,7 +23,7 @@
   border: 1px solid transparent;
   border-bottom: 0;
 
-  &.selected {
+  &.active {
     color: #333;
     background-color: #fff;
     border-color: #ddd;
@@ -62,4 +62,12 @@ a.tabnav-extra:hover {
 
 .tabnav-btn {
   margin-left: 10px;
+}
+
+// Bootstrap tab content
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
 }
