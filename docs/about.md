@@ -16,12 +16,16 @@ Open-sourcing Dojo means sharing and learning with the community. There's a lot 
 Dojo takes inspiration (and code) from the following open source frameworks.
 
 * [Foundation for Apps](http://foundation.zurb.com/apps)
-  * App Grid
+  * Licensed under the [MIT License](https://github.com/zurb/foundation-apps/blob/master/LICENSE)
+  * Copyright 1998-2015 Zurb, Inc.
 * [Bootstrap](http://getbootstrap.com)
-  * Pagination
-  * Responsive Embed
+  * Code licensed under the [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * Documentation licensed under [CC BY 3.0](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE)
+  * Designed and built by [@mdo](http://twitter.com/mdo) and [@fat](http://twitter.com/fat)
+  * Copyright 2011-2015 Twitter, Inc.
 * [Github Primer](http://primercss.io/)
-  * Everything Else
+  * Licensed under the [MIT License](https://github.com/primer/primer/blob/master/LICENSE.md)
+  * Copyright 2015 GitHub, Inc.
 
 ### Browser support
 
@@ -30,7 +34,7 @@ Dojo currently supports Internet Explorer 10+ and the latest two versions of Chr
 ### Dependencies
 
 - Our styles are built with SCSS.
-- Bower is used to link Kickserv assets, namely Github's [Octicons](http://octicons.github.com) icon font and Markdown styles.
+- Bower is used to link assets, namely Github's [Octicons](http://octicons.github.com) icon font and Markdown styles.
 - Autoprefixer is used to generate vendor-prefixed declarations and is handled via our Gruntfile.
 - A custom plugin for snippet and example combos, `example.rb`, was created as a fork of Jekyll's built-in `highlight` plugin.
 
