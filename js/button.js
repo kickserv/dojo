@@ -26,7 +26,7 @@
   }
 
   Button.prototype.setState = function (state) {
-    var d    = 'disabled'
+    var d    = 'loading'
     var $el  = this.$element
     var val  = $el.is('input') ? 'val' : 'html'
     var data = $el.data()
