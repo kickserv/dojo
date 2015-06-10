@@ -5,15 +5,14 @@ title: Icons
 
 Dojo includes a curated set of icons specifically for use in Kickserv.
 
-{% example html %}
-<span class="ki-stack ki-4x">
-  <i class="ki-norman-back ki-stack-2x"></i>
-  <i class="ki-norman-head ki-stack-2x"></i>
-  <i class="ki-norman-band ki-stack-2x"></i>  
-</span>
-{% endexample %}
+## Contents
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
 
 ## Kickicons
+
+Click an icon to spawn a modal with the icon's class. Then just <kbd>CMD-C</kbd> to copy it to your clipboard.
 
 ### Brands
 
@@ -182,6 +181,63 @@ Dojo includes a curated set of icons specifically for use in Kickserv.
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-versions"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-x"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-zap"></i></a>
+
+## Examples
+
+### Sizing
+
+{% example html %}
+<i class="ki-light-bulb"></i>
+<i class="ki-light-bulb ki-2x"></i>
+<i class="ki-light-bulb ki-3x"></i>
+<i class="ki-light-bulb ki-4x"></i>
+<i class="ki-light-bulb ki-5x"></i>
+{% endexample %}
+
+### Fixed Width
+
+Useful for vertical lists, where icon width should be consistent and centered.
+
+{% example html %}
+<i class="ki-2x ki-megaphone ki-fw"></i><br>
+<i class="ki-2x ki-bookmark ki-fw"></i><br>
+<i class="ki-2x ki-globe ki-fw"></i><br>
+<i class="ki-2x ki-law ki-fw"></i><br>
+<i class="ki-2x ki-sign-out ki-fw"></i>
+{% endexample %}
+
+### Rotated and Flipped
+
+{% example html %}
+<i class="ki-2x ki-megaphone"></i><br>
+<i class="ki-2x ki-megaphone ki-rotate-90"></i><br>
+<i class="ki-2x ki-megaphone ki-rotate-180"></i><br>
+<i class="ki-2x ki-megaphone ki-rotate-270"></i><br>
+<i class="ki-2x ki-megaphone ki-flip-horizontal"></i><br>
+<i class="ki-2x ki-megaphone ki-flip-vertical"></i><br>
+{% endexample %}
+
+### Stacked
+
+{% example html %}
+<span class="ki-stack ki-4x">
+  <i class="ki-norman-back ki-stack-2x"></i>
+  <i class="ki-norman-head ki-stack-2x"></i>
+  <i class="ki-norman-band ki-stack-2x"></i>  
+</span>
+{% endexample %}
+
+### Spinning
+
+{% example html %}
+<i class="ki-sync ki-4x ki-spin"></i>
+{% endexample %}
+
+### Loading
+
+{% example html %}
+<i class="ki-spinner ki-4x ki-pulse"></i>
+{% endexample %}
 
 <div class="modal" id="iconModal">
   <div class="modal-dialog">
