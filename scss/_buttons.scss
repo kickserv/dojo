@@ -80,6 +80,17 @@
       box-shadow: none;
     }
   }
+  &.loading {
+    &,
+    &:hover {
+      color: rgba(102, 102, 102, 0.75);
+      cursor: default;
+      background-color: rgba(229, 229, 229, 0.75);
+      background-image: none;
+      border-color: rgba(197, 197, 197, 0.75);
+      box-shadow: none;
+    }
+  }
 }
 
 // Green primary button
@@ -124,6 +135,15 @@
       border-color: #b9dcac #b9dcac #a7c89b;
     }
   }
+  &.loading {
+    &,
+    &:hover {
+      color: #fefefe;
+      background-color: darken(#add39f, 10%);
+      background-image: linear-gradient(darken(#c3ecb4, 10%), darken(#add39f, 10%));
+      border-color: darken(#b9dcac, 10%) darken(#b9dcac, 10%) darken(#a7c89b, 10%);
+    }
+  }
 }
 
 // Red danger button
@@ -159,7 +179,15 @@
       border-color: #e1e1e1;
     }
   }
-
+  &.loading {
+    &,
+    &:hover {
+      color: #cb7f7f;
+      background-color: darken(#efefef, 10%);
+      background-image: linear-gradient(darken(#fefefe, 10%), darken(#efefef, 10%));
+      border-color: darken(#e1e1e1, 10%);
+    }
+  }
   &:hover,
   &:active,
   &.active {
@@ -214,6 +242,15 @@
       border-color: #e5e5e5;
     }
   }
+  &.loading {
+    &,
+    &:hover {
+      color: lighten($brand-gray, 5%);
+      background-color: #fff;
+      background-image: none;
+      border-color: lighten(#e5e5e5, 5%);
+    }
+  }
 }
 
 // Action button
@@ -257,6 +294,15 @@
       background-color: #fff;
       background-image: none;
       border-color: #e5e5e5;
+    }
+  }
+  &.loading {
+    &,
+    &:hover {
+      color: lighten($brand-gray, 5%);
+      background-color: #fff;
+      background-image: none;
+      border-color: lighten(#e5e5e5, 5%);
     }
   }
 }
@@ -468,5 +514,21 @@ label.btn {
   > input[type="checkbox"],
   > input[type="radio"] {
     display: none;
+  }
+}
+
+.btn.loading {
+  &:after {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8);
+    content: "\f110";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    margin-left: 8px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
   }
 }

@@ -201,9 +201,14 @@ Add `data-loading-text="Loading..."` to use a loading state on a button.
   For the sake of this demonstration, we are using `data-loading-text` and `$().button('loading')`, but that's not the only state you can use. See more on this below in the `$().button(string)` documentation.
 </div>
 
+<div class="flash flash-error" style="margin-bottom: 1rem">
+  <strong>Font Awesome required for loading icon.</strong>
+  If Font Awesome and it's stylesheet are not included, a spinning missing character icon will appear during the loading state.
+</div>
+
 {% example html %}
-<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
-  Loading state
+<button type="button" id="myButton" data-loading-text="Loading" class="btn btn-primary" autocomplete="off">
+  Press for a loading state
 </button>
 
 <script>
@@ -226,7 +231,7 @@ Add `data-toggle="button"` to activate toggling on a single button.
 </div>
 
 {% example html %}
-<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+<button type="button" class="btn" data-toggle="button" aria-pressed="false" autocomplete="off">
   Single toggle
 </button>
 {% endexample %}
@@ -247,13 +252,13 @@ Add `data-toggle="buttons"` to a `.btn-group` containing checkbox or radio input
 
 {% example html %}
 <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary active">
+  <label class="btn active">
     <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
   </label>
-  <label class="btn btn-primary">
+  <label class="btn">
     <input type="checkbox" autocomplete="off"> Checkbox 2
   </label>
-  <label class="btn btn-primary">
+  <label class="btn">
     <input type="checkbox" autocomplete="off"> Checkbox 3
   </label>
 </div>
@@ -261,13 +266,13 @@ Add `data-toggle="buttons"` to a `.btn-group` containing checkbox or radio input
 
 {% example html %}
 <div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary active">
+  <label class="btn active">
     <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
   </label>
-  <label class="btn btn-primary">
+  <label class="btn">
     <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
   </label>
-  <label class="btn btn-primary">
+  <label class="btn">
     <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
   </label>
 </div>
