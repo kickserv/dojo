@@ -183,14 +183,118 @@ Add `.button_to` to `<form>`s within `.btn-group`s for proper spacing and rounde
 </div>
 {% endexample %}
 
-<!-- ## Hidden text button
+## Javascript Buttons
 
-Use `.hidden-text-expander` to indicate and toggle hidden text.
+Do more with buttons. Control button states or create groups of buttons for more components like toolbars.
+
+<div class="flash flash-error">
+  <strong>Cross-browser compatibility</strong>
+  Firefox persists form control states (disabledness and checkedness) across page loads. A workaround for this is to use autocomplete="off". See Mozilla bug #654072.
+</div>
+
+### Stateful
+
+Add `data-loading-text="Loading..."` to use a loading state on a button.
+
+<div class="flash" style="margin-bottom: 1rem">
+  <strong>Use whichever state you like!</strong>
+  For the sake of this demonstration, we are using `data-loading-text` and `$().button('loading')`, but that's not the only state you can use. See more on this below in the `$().button(string)` documentation.
+</div>
 
 {% example html %}
-<span class="hidden-text-expander">
-  <a href="#">&hellip;</a>
-</span>
+<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+  Loading state
+</button>
+
+<script>
+  $('#myButton').on('click', function () {
+    var $btn = $(this)
+    $btn.button('loading'),
+    setTimeout(function() {
+      $btn.button('reset')}, 3e3)
+    })
+</script>
 {% endexample %}
 
-You can also make the expander appear inline by adding `.inline`. -->
+### Single toggle
+
+Add `data-toggle="button"` to activate toggling on a single button.
+
+<div class="flash flash-error" style="margin-bottom: 1rem">
+  <strong>Pre-toggled buttons need <code>.active</code> and <code>aria-pressed="true"</code>.</strong>
+  For pre-toggled buttons, you must add the <code>.active</code> class and the <code>aria-pressed="true"</code> attribute to the button yourself.
+</div>
+
+{% example html %}
+<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Single toggle
+</button>
+{% endexample %}
+
+### Checkbox / Radio
+
+Add `data-toggle="buttons"` to a `.btn-group` containing checkbox or radio inputs to enable toggling in their respective styles.
+
+<div class="flash flash-error" style="margin-bottom: 1rem">
+  <strong>Preselected options need <code>.active</code></strong>
+  For preselected options, you must add the <code>.active</code> class to the input's label yourself.
+</div>
+
+<div class="flash flash-error" style="margin-bottom: 1rem">
+  <strong>Visual checked state only updated on click</strong>
+  If the checked state of a checkbox button is updated without firing a <code>click</code> event on the button (e.g. via <code>&lt;input type="reset"></code> or via setting the <code>checked</code> property of the input), you will need to toggle the <code>.active</code> class on the input's label yourself.
+</div>
+
+{% example html %}
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" autocomplete="off"> Checkbox 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" autocomplete="off"> Checkbox 3
+  </label>
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+  </label>
+</div>
+{% endexample %}
+
+### Methods
+
+#### $().button('toggle')
+
+Toggles push state. Gives the button the appearance that it has been activated.
+
+#### $().button('reset')
+
+Resets button state - swaps text to original text.
+
+#### $().button(string)
+
+Swaps text to any data defined text state.
+
+{% highlight html %}
+<button type="button" id="myStateButton" data-complete-text="finished!" class="btn btn-primary" autocomplete="off">
+  ...
+</button>
+
+<script>
+  $('#myStateButton').on('click', function () {
+    $(this).button('complete') // button text will be "finished!"
+  })
+</script>
+{% endhighlight %}

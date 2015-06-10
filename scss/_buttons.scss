@@ -41,7 +41,7 @@
   }
 
   &:focus:hover,
-  &.selected:focus {
+  &.active:focus {
     border-color: #51a7e8;
   }
 
@@ -56,7 +56,7 @@
   }
 
   &:active,
-  &.selected,
+  &.active,
   &.zeroclipboard-is-active {
     background-color: #dcdcdc;
     background-image: none;
@@ -64,7 +64,7 @@
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
   }
 
-  &.selected:hover {
+  &.active:hover {
     background-color: darken(#dcdcdc, 5%);
   }
 
@@ -103,14 +103,14 @@
   }
 
   &:active,
-  &.selected {
+  &.active {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
     background-color: darken(#60b044, 5%);
     background-image: none;
     border-color: darken(#4a993e, 5%);
   }
 
-  &.selected:hover {
+  &.active:hover {
     background-color: darken(#60b044, 10%);
   }
 
@@ -138,14 +138,14 @@
   }
 
   &:active,
-  &.selected {
+  &.active {
     color: #fff;
     background-color: #b33630;
     background-image: none;
     border-color: darken(#cd504a, 15%);
   }
 
-  &.selected:hover {
+  &.active:hover {
     background-color: darken(#b33630, 5%);
   }
 
@@ -162,7 +162,7 @@
 
   &:hover,
   &:active,
-  &.selected {
+  &.active {
     .counter {
       color: #b33630;
       background-color: #fff;
@@ -186,7 +186,7 @@
 
   &:hover,
   &:active,
-  &.selected,
+  &.active,
   &.zeroclipboard-is-hover,
   &.zeroclipboard-is-active {
     color: #fff;
@@ -200,7 +200,7 @@
     }
   }
 
-  &.selected:hover {
+  &.active:hover {
     background-color: darken($brand-blue, 5%);
   }
 
@@ -231,7 +231,7 @@
 
   &:hover,
   &:active,
-  &.selected,
+  &.active,
   &.zeroclipboard-is-hover,
   &.zeroclipboard-is-active {
     color: #fff;
@@ -245,7 +245,7 @@
     }
   }
 
-  &.selected:hover {
+  &.active:hover {
     background-color: darken($brand-blue, 5%);
   }
 
@@ -387,7 +387,7 @@
     // Bring any button into forefront for proper borders given negative margin below
     &:hover,
     &:active,
-    &.selected {
+    &.active {
       z-index: 2;
     }
 
@@ -460,5 +460,13 @@
 
   &:focus {
     outline: none; // Prevents the blue ring when clicked.
+  }
+}
+
+
+label.btn {
+  > input[type="checkbox"],
+  > input[type="radio"] {
+    display: none;
   }
 }
