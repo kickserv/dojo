@@ -216,8 +216,9 @@ Add `data-loading-text="Loading..."` to use a loading state on a button.
     var $btn = $(this)
     $btn.button('loading'),
     setTimeout(function() {
-      $btn.button('reset')}, 3e3)
-    })
+      $btn.button('reset')
+    }, 3e3)
+  })
 </script>
 {% endexample %}
 
