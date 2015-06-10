@@ -9,7 +9,7 @@ Buttons are used for **actions**, like in forms, while textual hyperlinks are us
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-
+ 
 ## Default buttons
 
 Use the standard—yet classy—`.btn` for form actions and primary page actions. These are used extensively around the site.

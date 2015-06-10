@@ -522,8 +522,14 @@ label.btn {
     -webkit-animation: fa-spin 1s infinite steps(8);
     animation: fa-spin 1s infinite steps(8);
     content: "\f110";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 'kickicons';
     font-size: inherit;
     margin-left: 8px;
     text-rendering: auto;

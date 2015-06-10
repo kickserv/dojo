@@ -123,15 +123,21 @@ body {
       float: left;
       margin-right: .5rem;
     }
+    &:hover {
+      opacity: .75;
+    }
+
   }
 
   .dojo-logo {
-    background: url(../img/dojo-logo.png) no-repeat center top;
-    background-size: 32px 32px;
     display: inline-block;
+    font-size: 20px;
     height: 32px;
+    line-height: 32px;
+    position: relative;
+    top: -2px;
     vertical-align: top;
-    width: 32px;
+    width: 40px;
   }
 
   @media (min-width: 34em) {
@@ -432,4 +438,163 @@ body {
       }
     }
   }
+}
+
+
+.bshadow0 {
+	box-shadow: inset 0 -2px #e7e7e7;
+}
+.glyph {
+	font-size: 16px;
+	width: 15em;
+	padding-bottom: 1em;
+	margin-right: 4em;
+	margin-bottom: 1em;
+	float: left;
+	overflow: hidden;
+}
+.liga {
+	width: 80%;
+	width: calc(100% - 2.5em);
+}
+.talign-right {
+	text-align: right;
+}
+.talign-center {
+	text-align: center;
+}
+.bgc1 {
+	background: #f1f1f1;
+}
+.fgc1 {
+	color: #999;
+}
+.fgc0 {
+	color: #000;
+}
+p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.mvm {
+	margin-top: .75em;
+	margin-bottom: .75em;
+}
+.mtn {
+	margin-top: 0;
+}
+.mtl, .mal {
+	margin-top: 1.5em;
+}
+.mbl, .mal {
+	margin-bottom: 1.5em;
+}
+.mal, .mhl {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+.mhmm {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.mls {
+	margin-left: .25em;
+}
+.ptl {
+	padding-top: 1.5em;
+}
+.pbs, .pvs {
+	padding-bottom: .25em;
+}
+.pvs, .pts {
+	padding-top: .25em;
+}
+.unit {
+	float: left;
+}
+.unitRight {
+	float: right;
+}
+.size1of2 {
+	width: 50%;
+}
+.size1of1 {
+	width: 100%;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.hidden-true {
+	display: none;
+}
+.textbox0 {
+	width: 3em;
+	background: #f1f1f1;
+	padding: .25em .5em;
+	line-height: 1.5;
+	height: 1.5em;
+}
+#testDrive {
+	display: block;
+	padding-top: 24px;
+	line-height: 1.5;
+}
+.fs0 {
+	font-size: 16px;
+}
+.fs1 {
+	font-size: 32px;
+}
+.fs2 {
+	font-size: 28px;
+}
+.fs3 {
+	font-size: 32px;
+}
+.icon-box {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: $brand-gray-dark;
+  display: inline-block;
+  height: 48px;
+  line-height: 56px;
+  margin: 0 6px 6px 0;
+  text-align: center;
+  width: 48px;
+  &:hover {
+    text-decoration: none;
+  }
+  i {
+    font-size: 24px;
+  }
+}
+.icon-box-wide {
+  width: 104px;
+}
+#iconModal i {
+  margin-right: 10px;
+}
+#iconExample-1x {
+  font-size: 1em;
+}
+#iconExample-2x {
+  font-size: 2em;
+}
+#iconExample-3x {
+  font-size: 3em;
+}
+#iconExample-4x {
+  font-size: 4em;
+}
+#iconExample-5x {
+  font-size: 5em;
+}
+#iconClass, #iconClass:focus {
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }

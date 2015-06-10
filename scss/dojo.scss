@@ -17,11 +17,14 @@
 // Basecoat
 @import "normalize";
 @import "base";
+@import "icons";
 @import "type";
 @import "layout";
 @import "grid"; // Pulled from Foundation for Apps
 @import "forms";
 @import "tables";
+@import "panels";
+@import "modal";
 @import "utility";
 
 // Components
@@ -36,8 +39,6 @@
 @import "filter-list";
 @import "states";
 @import "tooltips";
-@import "panels";
-@import "modal";
 
 // Utilities
 @import "flex-table";
@@ -45,4 +46,3 @@
 
 @import "fonts";
 @import "dropdown";
-@import "icons";
