@@ -125,18 +125,29 @@
     <div class="markdown-body">
       <p>Dojo includes a curated set of icons specifically for use in Kickserv.</p>
 
-<div class="docs-example clearfix"><span class="ki-stack ki-4x">
-  <i class="ki-norman-back ki-stack-2x"></i>
-  <i class="ki-norman-head ki-stack-2x"></i>
-  <i class="ki-norman-band ki-stack-2x"></i>  
-</span></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ki-stack ki-4x"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-norman-back ki-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-norman-head ki-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
-  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-norman-band ki-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>  
-<span class="nt">&lt;/span&gt;</span></code></pre></div>
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents">Contents</a></li>
+  <li><a href="#kickicons">Kickicons</a>    <ul>
+      <li><a href="#brands">Brands</a></li>
+      <li><a href="#general">General</a></li>
+    </ul>
+  </li>
+  <li><a href="#examples">Examples</a>    <ul>
+      <li><a href="#sizing">Sizing</a></li>
+      <li><a href="#fixed-width">Fixed Width</a></li>
+      <li><a href="#rotated-and-flipped">Rotated and Flipped</a></li>
+      <li><a href="#stacked">Stacked</a></li>
+      <li><a href="#spinning">Spinning</a></li>
+      <li><a href="#loading">Loading</a></li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="kickicons">Kickicons</h2>
+
+<p>Click an icon to spawn a modal with the icon’s class. Then just <kbd>CMD-C</kbd> to copy it to your clipboard.</p>
 
 <h3 id="brands">Brands</h3>
 
@@ -306,6 +317,74 @@
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-x"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-zap"></i></a></p>
 
+<h2 id="examples">Examples</h2>
+
+<h3 id="sizing">Sizing</h3>
+
+<div class="docs-example clearfix"><i class="ki-light-bulb"></i>
+<i class="ki-light-bulb ki-2x"></i>
+<i class="ki-light-bulb ki-3x"></i>
+<i class="ki-light-bulb ki-4x"></i>
+<i class="ki-light-bulb ki-5x"></i></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-light-bulb"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-light-bulb ki-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-light-bulb ki-3x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-light-bulb ki-4x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-light-bulb ki-5x"</span><span class="nt">&gt;&lt;/i&gt;</span></code></pre></div>
+
+<h3 id="fixed-width">Fixed Width</h3>
+
+<p>Useful for vertical lists, where icon width should be consistent and centered.</p>
+
+<div class="docs-example clearfix"><i class="ki-2x ki-megaphone ki-fw"></i><br />
+<i class="ki-2x ki-bookmark ki-fw"></i><br />
+<i class="ki-2x ki-globe ki-fw"></i><br />
+<i class="ki-2x ki-law ki-fw"></i><br />
+<i class="ki-2x ki-sign-out ki-fw"></i></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-megaphone ki-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-bookmark ki-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-globe ki-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-law ki-fw"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-sign-out ki-fw"</span><span class="nt">&gt;&lt;/i&gt;</span></code></pre></div>
+
+<h3 id="rotated-and-flipped">Rotated and Flipped</h3>
+
+<div class="docs-example clearfix"><i class="ki-2x ki-megaphone"></i><br />
+<i class="ki-2x ki-megaphone ki-rotate-90"></i><br />
+<i class="ki-2x ki-megaphone ki-rotate-180"></i><br />
+<i class="ki-2x ki-megaphone ki-rotate-270"></i><br />
+<i class="ki-2x ki-megaphone ki-flip-horizontal"></i><br />
+<i class="ki-2x ki-megaphone ki-flip-vertical"></i><br /></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-megaphone"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-megaphone ki-rotate-90"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-megaphone ki-rotate-180"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-megaphone ki-rotate-270"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-megaphone ki-flip-horizontal"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span>
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-2x ki-megaphone ki-flip-vertical"</span><span class="nt">&gt;&lt;/i&gt;&lt;br&gt;</span></code></pre></div>
+
+<h3 id="stacked">Stacked</h3>
+
+<div class="docs-example clearfix"><span class="ki-stack ki-4x">
+  <i class="ki-norman-back ki-stack-2x"></i>
+  <i class="ki-norman-head ki-stack-2x"></i>
+  <i class="ki-norman-band ki-stack-2x"></i>  
+</span></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ki-stack ki-4x"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-norman-back ki-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-norman-head ki-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-norman-band ki-stack-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>  
+<span class="nt">&lt;/span&gt;</span></code></pre></div>
+
+<h3 id="spinning">Spinning</h3>
+
+<div class="docs-example clearfix"><i class="ki-sync ki-4x ki-spin"></i></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-sync ki-4x ki-spin"</span><span class="nt">&gt;&lt;/i&gt;</span></code></pre></div>
+
+<h3 id="loading">Loading</h3>
+
+<div class="docs-example clearfix"><i class="ki-spinner ki-4x ki-pulse"></i></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ki-spinner ki-4x ki-pulse"</span><span class="nt">&gt;&lt;/i&gt;</span></code></pre></div>
+
 <div class="modal" id="iconModal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -346,7 +425,7 @@
 
       <footer class="footer">
         Copyright Kickserv 2015.<br>
-        Created and maintained by the CSS team at Kickserv. Heavily inspired by Github's Primer. <strong>Currently v0.2.1.</strong>
+        Created and maintained by the CSS team at Kickserv. Heavily inspired by Github's Primer. <strong>Currently v0.2.2.</strong>
       </footer>
     </div>
 
