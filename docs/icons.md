@@ -27,12 +27,7 @@ Click an icon to spawn a modal with the icon's class. Then just <kbd>CMD-C</kbd>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-yelp"></i></a>
 
 ### General
-
-<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-plane"></i></a>
-<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-paperclip"></i></a>
-<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-building-o"></i></a>
-<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-spinner"></i></a>
-<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-newspaper-o"></i></a>
+ 
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-alert"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-beer"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-book"></i></a>
@@ -40,6 +35,7 @@ Click an icon to spawn a modal with the icon's class. Then just <kbd>CMD-C</kbd>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-briefcase"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-broadcast"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-browser"></i></a>
+<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-building"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-calendar"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-check"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-checklist"></i></a>
@@ -129,13 +125,16 @@ Click an icon to spawn a modal with the icon's class. Then just <kbd>CMD-C</kbd>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-move-right"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-move-up"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-mute"></i></a>
+<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-newspaper"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-no-newline"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-organization"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-package"></i></a>
+<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-paperclip"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-paintcan"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-pencil"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-person"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-pin"></i></a>
+<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-plane"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-playback-fast-forward"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-playback-pause"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-playback-play"></i></a>
@@ -161,6 +160,7 @@ Click an icon to spawn a modal with the icon's class. Then just <kbd>CMD-C</kbd>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-settings"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-sign-in"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-sign-out"></i></a>
+<a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-spinner"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-split"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-star"></i></a>
 <a href="#iconModal" data-toggle="modal" class="icon-box"><i class="ki-steps"></i></a>
