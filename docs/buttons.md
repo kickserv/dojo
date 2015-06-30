@@ -9,7 +9,7 @@ Buttons are used for **actions**, like in forms, while textual hyperlinks are us
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
- 
+
 ## Default buttons
 
 Use the standard—yet classy—`.btn` for form actions and primary page actions. These are used extensively around the site.
@@ -199,11 +199,6 @@ Add `data-loading-text="Loading..."` to use a loading state on a button.
 <div class="flash" style="margin-bottom: 1rem">
   <strong>Use whichever state you like!</strong>
   For the sake of this demonstration, we are using `data-loading-text` and `$().button('loading')`, but that's not the only state you can use. See more on this below in the `$().button(string)` documentation.
-</div>
-
-<div class="flash flash-error" style="margin-bottom: 1rem">
-  <strong>Font Awesome required for loading icon.</strong>
-  If Font Awesome and it's stylesheet are not included, a spinning missing character icon will appear during the loading state.
 </div>
 
 {% example html %}
