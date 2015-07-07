@@ -14,7 +14,7 @@
     "scss/dojo.scss"
   ],
   "dependencies": {
-    "kickicons": "https://github.com/kickserv/kickicons.git#1.1",
+    "kickicons": "https://github.com/kickserv/kickicons.git#1.1.0",
     "primer-markdown": "https://github.com/primer/markdown.git#2.1.7"
   }
 }
