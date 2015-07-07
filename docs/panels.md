@@ -49,7 +49,7 @@ In many cases, it may be necessary to include content in a toggleable sidebar. N
     <div class="panel-content">
       <a href="#sidebar" class="right js-toggle">
         Show Sidebar
-        <i class="octicon octicon-settings icon-right"></i>
+        <i class="ki-settings icon-right"></i>
       </a>
       <h3 class="panel-title">How does the sidebar work?</h3>
     </div>

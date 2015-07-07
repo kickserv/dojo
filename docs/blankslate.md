@@ -23,13 +23,13 @@ Wrap some content in the outer `.blankslate` wrapper to give it the blankslate a
 
 ## With Octicons
 
-When it helps the message, include `.mega-octicon`s as the first elements in the blank slate. Be sure to use relevant icons.
+When it helps the message, include `.ki-lg`s as the first elements in the blank slate. Be sure to use relevant icons.
 
 {% example html %}
 <div class="blankslate">
-  <span class="mega-octicon octicon-git-commit"></span>
-  <span class="mega-octicon octicon-tag"></span>
-  <span class="mega-octicon octicon-git-branch"></span>
+  <span class="ki-lg ki-git-commit"></span>
+  <span class="ki-lg ki-tag"></span>
+  <span class="ki-lg ki-git-branch"></span>
   <h3>This is a blank slate</h3>
   <p>Use it to provide information when no dynamic content exists.</p>
 </div>

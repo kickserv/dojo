@@ -85,7 +85,7 @@ For a link that uses the entire cell for a click target, use the following html.
       <td>norman@kickserv.com</td>
       <td class="table-action">
         <a href="">
-          <i class="octicon octicon-megaphone"> </i>
+          <i class="ki-megaphone"> </i>
         </a>
       </td>
     </tr>
@@ -112,7 +112,7 @@ For potentially dangerous table actions, use `.table-action-danger` in addition.
       <td>norman@kickserv.com</td>
       <td class="table-action table-action-danger">
         <a href="">
-          <i class="octicon octicon-trashcan"> </i>
+          <i class="ki-trashcan"> </i>
         </a>
       </td>
     </tr>
@@ -139,7 +139,7 @@ If no data is available to display in a table, use a blankslate. *Note the use o
     <tr>
       <td colspan="3" class="with-blankslate">
         <div class="blankslate spacious clean-background">
-          <span class="mega-octicon octicon-broadcast"></span>
+          <span class="mega-ki-broadcast"></span>
           <h3>Nothing to see here...</h3>
           <p><a href="">Add a new contact</a>, or why not kick back and relax?</p>
         </div>

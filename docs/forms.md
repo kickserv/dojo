@@ -156,7 +156,7 @@ Attached an input and button to one another.
     <input type="text" placeholder="Username">
     <span class="input-group-button">
       <button class="btn">
-        <span class="octicon octicon-clippy"></span>
+        <span class="ki-clippy"></span>
       </button>
     </span>
   </div>

@@ -35,19 +35,19 @@ The default presentation of the navbar is vertical, to be used as a sidebar.
     <ul class="nav">
       <li>
         <a href="">
-          <i class="octicon octicon-clippy"></i>
+          <i class="ki-clippy"></i>
           <span class="nav-label">Estimates</span>
         </a>
       </li>
       <li class="active">
         <a href="">
-          <i class="octicon octicon-briefcase"></i>
+          <i class="ki-briefcase"></i>
           <span class="nav-label">Jobs</span>
         </a>
       </li>
       <li>
         <a href="">
-          <i class="octicon octicon-organization"></i>
+          <i class="ki-organization"></i>
           <span class="nav-label">Contacts</span>
         </a>
       </li>
@@ -81,19 +81,19 @@ You can easily change the layout of the navbar by using a `.navbar-top` class on
         <ul class="nav">
           <li>
             <a href="">
-              <i class="octicon octicon-clippy"></i>
+              <i class="ki-clippy"></i>
               <span class="nav-label">Estimates</span>
             </a>
           </li>
           <li class="active">
             <a href="">
-              <i class="octicon octicon-briefcase"></i>
+              <i class="ki-briefcase"></i>
               <span class="nav-label">Jobs</span>
             </a>
           </li>
           <li>
             <a href="">
-              <i class="octicon octicon-organization"></i>
+              <i class="ki-organization"></i>
               <span class="nav-label">Contacts</span>
             </a>
           </li>
@@ -152,19 +152,19 @@ There are a few subcomponents and add-ons that work well with the menu, includin
 {% example html %}
 <nav class="menu">
   <a class="menu-item active" href="#">
-    <span class="octicon octicon-tools"></span>
+    <span class="ki-tools"></span>
     Account
   </a>
   <a class="menu-item" href="#">
-    <span class="octicon octicon-person"></span>
+    <span class="ki-person"></span>
     Profile
   </a>
   <a class="menu-item" href="#">
-    <span class="octicon octicon-mail"></span>
+    <span class="ki-mail"></span>
     Emails
   </a>
   <a class="menu-item" href="#">
-    <span class="octicon octicon-radio-tower"></span>
+    <span class="ki-radio-tower"></span>
     <span class="counter">3</span>
     Notifications
   </a>

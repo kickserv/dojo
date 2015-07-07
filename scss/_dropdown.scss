@@ -5,7 +5,7 @@
   &.show {
     display: block;
   }
-  .octicon {
+  [class^="ki-"], [class*=" ki-"] {
     color: $brand-gray-light;
   }
 }

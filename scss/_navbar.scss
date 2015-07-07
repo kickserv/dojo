@@ -41,14 +41,14 @@
   .nav {
     list-style: none;
     margin: 0;
-    .octicon {
+    [class^="ki-"], [class*=" ki-"] {
       display: inline-block;
       font-size: 16px;
       text-align: center;
       width: 20px;
     }
     li {
-      a, .octicon {
+      a, [class^="ki-"], [class*=" ki-"] {
         line-height: 45px;
       }
       a {
@@ -171,7 +171,7 @@
     .nav {
       li {
         float: left;
-        a, .octicon {
+        a, [class^="ki-"], [class*=" ki-"] {
           line-height: 54px;
         }
         a {

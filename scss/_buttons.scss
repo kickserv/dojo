@@ -23,7 +23,7 @@
     opacity: 0.6;
   }
 
-  .octicon {
+  [class^="ki-"], [class*=" ki-"] {
     vertical-align: text-top;
   }
 

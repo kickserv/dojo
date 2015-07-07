@@ -462,10 +462,10 @@ input::-webkit-inner-spin-button {
 
 .status-indicator-success:before {
   color: $brand-green;
-  content: "\f03a"; // octicon-check
+  content: "\f03a"; // ki-check
 }
 
 .status-indicator-failed:before {
   color: $brand-red;
-  content: "\f02d"; // octicon-x
+  content: "\f02d"; // ki-x
 }

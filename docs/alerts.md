@@ -57,11 +57,11 @@ Add `.flash-warn` or `.flash-error` to the flash message to make it yellow or re
 
 ## With icon
 
-Add an icon to the left of the flash message to give it some funky fresh attention. Just add `.flash-with-icon` and your Octicon.
+Add an icon to the left of the flash message to give it some funky fresh attention. Just add `.flash-with-icon` and your Kickicon. 
 
 {% example html %}
 <div class="flash flash-with-icon">
-  <span class="octicon octicon-alert"></span>
+  <span class="ki-alert"></span>
   Flash message with an icon goes here.
 </div>
 {% endexample %}
@@ -72,7 +72,7 @@ Add a JavaScript enabled (via Crema) dismiss (close) icon on the right of any fl
 
 {% example html %}
 <div class="flash">
-  <span class="octicon octicon-x flash-close js-flash-close"></span>
+  <span class="ki-x flash-close js-flash-close"></span>
   Dismissable flash message goes here.
 </div>
 {% endexample %}

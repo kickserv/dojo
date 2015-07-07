@@ -28,7 +28,7 @@ This is the [Bower][bower] package for [GitHub Octicons][octicons].
 4. Simply use an icon in your HTML page:
 
   ``` html
-  <span class="octicon octicon-microscope"></span>
+  <span class="ki-microscope"></span>
   ```
 
 ### Rails' asset pipeline
@@ -67,14 +67,14 @@ Octicons includes a stylesheet specifically for [Rails 4/Sprockets][sprockets].
 6. Simply use an icon in your HTML page:
 
   ``` html
-  <span class="octicon octicon-flame"></span>
+  <span class="ki-flame"></span>
   ```
 
 7. If you want a view helper, add something like this to *app/helpers/application_helper.rb*:
 
   ``` ruby
   def octicon(code)
-    content_tag :span, '', :class => "octicon octicon-#{code.to_s.dasherize}"
+    content_tag :span, '', :class => "ki-#{code.to_s.dasherize}"
   end
   ```
 

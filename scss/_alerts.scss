@@ -67,7 +67,8 @@
 .flash-with-icon {
   padding-left: 40px;
 
-  > .octicon {
+  > [class^="ki-"],
+  > [class*=" ki-"] {
     float: left;
     margin-top: 3px;
     margin-left: -25px;
