@@ -38,15 +38,13 @@ $ bower install dojo-css --save
 
 ## Usage
 
-Once included, simply `@import` either the master SCSS file, or the individual files as you need them. Note the `$kickicons-font-path` is **required** for Dojo to not explode.
+Once included, simply `@import` either the master SCSS file, or the individual files as you need them.
 
 ```scss
 // Example: All of Dojo
-$kickicons-font-path: 'bower_components/dojo-css/fonts';
 @import "dojo-css/scss/dojo";
 
 // Example: Individual files
-$kickicons-font-path: 'bower_components/dojo-css/fonts';
 @import "dojo-css/scss/variables";
 @import "dojo-css/scss/mixins";
 @import "dojo-css/scss/base";
