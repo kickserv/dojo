@@ -1,6 +1,6 @@
 {
   "name": "dojo",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "homepage": "http://dojo.kickserv.com",
   "author": "GitHub, Inc.",
   "scss": "./scss/dojo.scss",

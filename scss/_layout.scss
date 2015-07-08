@@ -24,6 +24,14 @@
   padding-left: $grid-gutter;
 }
 
+@media screen and (max-width: 767px) {
+  .column {
+    float: none;
+    width: 100%;
+  }
+}
+
+
 // Column widths
 .one-third {
   width: 33.333333%;

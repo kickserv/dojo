@@ -469,3 +469,14 @@ input::-webkit-inner-spin-button {
   color: $brand-red;
   content: "\f02d"; // ki-x
 }
+
+select {
+  font-size: 16px;
+}
+.form-group {
+  margin-bottom: 1rem;
+  label {
+    display: block;
+    margin-bottom: .25rem;
+  }
+}

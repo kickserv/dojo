@@ -33,7 +33,7 @@
   background: #fff;
   border: 1px solid $border;
   border-radius: $border-radius;
-  margin: 0 1rem 1rem;
+  margin: 0 0 1rem;
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
@@ -109,5 +109,10 @@
   tr:last-child td,
   td.with-blankslate {
     border-bottom: none;
+  }
+}
+.panel-body + .panel-body {
+  .panel-content {
+    border-top: 1px solid #e7e7ea;
   }
 }
