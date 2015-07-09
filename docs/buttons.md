@@ -62,6 +62,15 @@ Action buttons are a little fancier than Outline buttons. Just add `.btn-action`
 {% example html %}
 <button class="btn btn-action" type="button">Action button</button>
 <button class="btn btn-sm btn-action" type="button">Action button</button>
+{% endexample %} 
+
+## Link
+
+Link buttons take up the same amount of space as buttons, but have no outlines. Great for lining up a primary and secondary action.
+
+{% example html %}
+<button class="btn btn-primary" type="button">Primary button</button>
+<button class="btn btn-link" type="button">Link button</button>
 {% endexample %}
 
 

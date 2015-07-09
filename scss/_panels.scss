@@ -37,6 +37,12 @@
   -webkit-flex-flow: column nowrap;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  p:last-child {
+    margin: 0;
+  }
 }
 .panel,
 .panel-body,

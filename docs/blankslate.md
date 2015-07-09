@@ -21,7 +21,7 @@ Wrap some content in the outer `.blankslate` wrapper to give it the blankslate a
 </div>
 {% endexample %}
 
-## With Octicons
+## With Kickicons
 
 When it helps the message, include `.ki-lg`s as the first elements in the blank slate. Be sure to use relevant icons.
 

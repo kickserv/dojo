@@ -21,6 +21,7 @@
     font-style: normal;
     font-weight: 500;
     opacity: 0.6;
+    vertical-align: baseline;
   }
 
   [class^="ki-"], [class*=" ki-"] {
@@ -488,10 +489,10 @@
 // Buttons backed by radio or checkbox control. Requires the use of `.hidden`
 // on the `input` to properly hide it.
 .btn-link {
+  background: none;
   display: inline-block;
-  padding: 0;
   font-size: inherit;
-  color: $brand-blue;
+  color: $link-blue;
   white-space: nowrap;
   cursor: pointer;
   background-color: transparent;
@@ -501,14 +502,21 @@
 
   &:hover,
   &:focus {
+    background: none;
+    color: darken($link-blue, 15%);
     text-decoration: underline;
   }
-
+  &.active {
+    background: none;
+    box-shadow: none;
+    &:hover {
+      background: none;
+    }
+  }
   &:focus {
     outline: none; // Prevents the blue ring when clicked.
   }
 }
-
 
 label.btn {
   > input[type="checkbox"],

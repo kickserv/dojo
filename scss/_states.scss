@@ -29,3 +29,11 @@
 .state-canceled { background-color: $status-closed; }
 
 .state-renamed { background-color: $status-renamed; }
+
+.state-empty {
+  background: #fff;
+  border: 1px solid #999;
+  color: $text-color;
+  font-weight: normal;
+  padding: 3px 7px;
+}
