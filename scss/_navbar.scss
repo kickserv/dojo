@@ -131,11 +131,11 @@
   .navbar-utility .utility {
     padding: .5rem 0;
     text-align: center;
+  }
+  .navbar-utility {
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
-  }
-  .navbar-utility {
     .utility + .utility {
       border-top: none;
     }
