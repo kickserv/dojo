@@ -8,7 +8,7 @@ permalink: pretty
 source: docs
 baseurl: ""
 
-version: 0.3.4
+version: 0.3.5
 
 sass:
   sass_dir: ../

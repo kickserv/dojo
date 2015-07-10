@@ -68,6 +68,7 @@ If you have all those set up, now you can install the dependencies:
 
 ```bash
 $ npm install
+$ npm install autoprefixer-core
 $ bower install
 ```
 
@@ -109,7 +110,7 @@ Within `bower.json`, update to a new release by changing the version number that
 {
   "name": "myapp",
   "dependencies": {
-    "primer-css": "x.x.x"
+    "dojo-css": "x.x.x"
   }
 }
 ```

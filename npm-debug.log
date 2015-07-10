@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.1.14
+3 info using node@v0.10.34
+4 verbose node symlink /usr/local/bin/node
+5 verbose install where, deps [ '/Users/briannelson1/Sites/dojo',
+5 verbose install   [ 'grunt',
+5 verbose install     'grunt-autoprefixer-core',
+5 verbose install     'grunt-build-control',
+5 verbose install     'grunt-jekyll',
+5 verbose install     'grunt-parker',
+5 verbose install     'grunt-sass',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-postcss' ] ]
+6 verbose install where, peers [ '/Users/briannelson1/Sites/dojo', [] ]
+7 info preinstall dojo@0.3.5
+8 verbose already installed skipping grunt-parker@~0.1.0 /Users/briannelson1/Sites/dojo
+9 verbose already installed skipping grunt-sass@~0.18.0 /Users/briannelson1/Sites/dojo
+10 verbose already installed skipping grunt-contrib-watch@~0.6.1 /Users/briannelson1/Sites/dojo
+11 verbose already installed skipping grunt-postcss@~0.5.1 /Users/briannelson1/Sites/dojo
+12 verbose already installed skipping grunt@~0.4.5 /Users/briannelson1/Sites/dojo
+13 silly cache add args [ 'grunt-autoprefixer-core@~5.2.1', null ]
+14 verbose cache add spec grunt-autoprefixer-core@~5.2.1
+15 silly cache add parsed spec { raw: 'grunt-autoprefixer-core@~5.2.1',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'grunt-autoprefixer-core',
+15 silly cache add   rawSpec: '~5.2.1',
+15 silly cache add   spec: '>=5.2.1 <5.3.0',
+15 silly cache add   type: 'range' }
+16 verbose addNamed grunt-autoprefixer-core@>=5.2.1 <5.3.0
+17 silly addNamed semver.valid null
+18 silly addNamed semver.validRange >=5.2.1 <5.3.0
+19 silly addNameRange { name: 'grunt-autoprefixer-core',
+19 silly addNameRange   range: '>=5.2.1 <5.3.0',
+19 silly addNameRange   hasData: false }
+20 silly mapToRegistry name grunt-autoprefixer-core
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/grunt-autoprefixer-core
+24 verbose addNameRange registry:https://registry.npmjs.org/grunt-autoprefixer-core not in flight; fetching
+25 verbose already installed skipping grunt-build-control@~0.2.0 /Users/briannelson1/Sites/dojo
+26 verbose already installed skipping grunt-jekyll@~0.4.2 /Users/briannelson1/Sites/dojo
+27 verbose request uri https://registry.npmjs.org/grunt-autoprefixer-core
+28 verbose request no auth needed
+29 info attempt registry request try #1 at 07:24:28
+30 verbose request id 65c62bfdd59c4f4d
+31 http request GET https://registry.npmjs.org/grunt-autoprefixer-core
+32 http 404 https://registry.npmjs.org/grunt-autoprefixer-core
+33 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '51',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Fri, 10 Jul 2015 12:24:29 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   age: '0',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-dfw1825-DFW',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1436531068.817694,VS0,VE277' }
+34 silly get cb [ 404,
+34 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+34 silly get     'content-type': 'application/json',
+34 silly get     'cache-control': 'max-age=0',
+34 silly get     'content-length': '51',
+34 silly get     'accept-ranges': 'bytes',
+34 silly get     date: 'Fri, 10 Jul 2015 12:24:29 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     age: '0',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-dfw1825-DFW',
+34 silly get     'x-cache': 'MISS',
+34 silly get     'x-cache-hits': '0',
+34 silly get     'x-timer': 'S1436531068.817694,VS0,VE277' } ]
+35 verbose stack Error: 404 Not Found: grunt-autoprefixer-core
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:241:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:373:22)
+35 verbose stack     at Request.emit (events.js:98:17)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1318:14)
+35 verbose stack     at Request.emit (events.js:117:20)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1266:12)
+35 verbose stack     at IncomingMessage.emit (events.js:117:20)
+35 verbose stack     at _stream_readable.js:944:16
+35 verbose stack     at process._tickCallback (node.js:442:13)
+36 verbose statusCode 404
+37 verbose pkgid grunt-autoprefixer-core
+38 verbose cwd /Users/briannelson1/Sites/dojo
+39 error Darwin 14.3.0
+40 error argv "node" "/usr/local/bin/npm" "install"
+41 error node v0.10.34
+42 error npm  v2.1.14
+43 error code E404
+44 error 404 Not Found: grunt-autoprefixer-core
+44 error 404
+44 error 404 'grunt-autoprefixer-core' is not in the npm registry.
+44 error 404 You should bug the author to publish it (or use the name yourself!)
+44 error 404 It was specified as a dependency of 'dojo'
+44 error 404
+44 error 404 Note that you can also install from a
+44 error 404 tarball, folder, http url, or git url.
+45 verbose exit [ 1, true ]
